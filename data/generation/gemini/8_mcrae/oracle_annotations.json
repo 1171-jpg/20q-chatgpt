@@ -1,0 +1,2329 @@
+[
+    {
+        "annotation_status": "ongoing",
+        "target": "fox",
+        "candidates": [
+            "elk",
+            "chicken",
+            "robin",
+            "starling",
+            "fox",
+            "partridge",
+            "hamster",
+            "buffalo"
+        ],
+        "dialogue_id": 1,
+        "questions": [
+            {
+                "question_step": 1,
+                "question": "Is it bigger than a cat?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 2,
+                "question": "Is it a bird?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 3,
+                "question": "Does it live in the wild?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 4,
+                "question": "Is it typically found in North America?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 5,
+                "question": "Is it a rodent?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 6,
+                "question": "Is it a carnivore?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 7,
+                "question": "Is it the fox?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 8,
+                "question": "Is it an animal that lives in the wild?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 9,
+                "question": "Does it have feathers?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 10,
+                "question": "Is it a mammal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 11,
+                "question": "Is it a large animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 12,
+                "question": "Does it have horns or antlers?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 13,
+                "question": "Is it a deer?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 14,
+                "question": "Is it an animal that flies?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 15,
+                "question": "Does it live in the water?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 16,
+                "question": "Is it a large animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 17,
+                "question": "Is it a mammal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 18,
+                "question": "Does it have stripes?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 19,
+                "question": "Is it a zebra?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 20,
+                "question": "Is it a mammal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 21,
+                "question": "Does it lay eggs?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 22,
+                "question": "Is it typically kept as a pet?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 23,
+                "question": "Does it have feathers?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 24,
+                "question": "Is it known for a distinctive call?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 25,
+                "question": "Is it a rooster?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 26,
+                "question": "Okay, I understand. I'll ask yes/no questions to guess the animal from your list.",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 27,
+                "question": "Okay, that narrows it down!",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 28,
+                "question": "Okay, not a mammal and it lays eggs. That's very helpful!",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 29,
+                "question": "Okay, it lays eggs, is not a mammal, and has feathers.",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 30,
+                "question": "Is it a mammal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 31,
+                "question": "Can it fly?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 32,
+                "question": "Is it typically kept as a pet?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 33,
+                "question": "Is it a bird of prey?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 34,
+                "question": "Is it nocturnal?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 35,
+                "question": "Is it a falcon?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 36,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 37,
+                "question": "Does it have stripes?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 38,
+                "question": "Is it a pet?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 39,
+                "question": "Is it bigger than a cat?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 40,
+                "question": "Is it a hamster?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 41,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 42,
+                "question": "Is it a wild animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 43,
+                "question": "Is it found in North America?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 44,
+                "question": "Does it belong to the cat family?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 45,
+                "question": "Does it build dams?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 46,
+                "question": "Is it typically found in water for most of its life?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 47,
+                "question": "Is it a dolphin?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 48,
+                "question": "Okay, I'm ready!",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 49,
+                "question": "Okay, great!",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 50,
+                "question": "Got it. So, an animal, not typically African.",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 51,
+                "question": "Hmm, an animal, not typically African, and not known for being large and powerful.",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 52,
+                "question": "Okay, an animal, not African, not large/powerful, and has antlers.",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 53,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 54,
+                "question": "Is it something you wear?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 55,
+                "question": "Does it typically cover your legs?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 56,
+                "question": "Is it worn on your upper body?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 57,
+                "question": "Is it an accessory that does not cover the main parts of your body (like a hat, scarf, or gloves)?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 58,
+                "question": "Is it worn on your feet?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 59,
+                "question": "Is it boots?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 60,
+                "question": "Is it alive?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 61,
+                "question": "Is it an article of clothing?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 62,
+                "question": "Is it worn on the upper body?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 63,
+                "question": "Is it worn around the neck?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 64,
+                "question": "Is it a tie?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 65,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 66,
+                "question": "Is it something you wear?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 67,
+                "question": "Is it typically worn on the upper body?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 68,
+                "question": "Is it typically worn on the lower body?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 69,
+                "question": "Does it have legs?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 70,
+                "question": "Is it something you wear around your neck or waist?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 71,
+                "question": "Is it used to hold up other clothing?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 72,
+                "question": "Is it a belt?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 73,
+                "question": "Is it a weapon?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 74,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 75,
+                "question": "Can it fly?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 76,
+                "question": "Is it typically found in the wild?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 77,
+                "question": "Is it larger than a breadbox?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 78,
+                "question": "Is it known for having antlers?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 79,
+                "question": "Is it known for being able to swim very well?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 80,
+                "question": "Is it a seal?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 81,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 82,
+                "question": "Does it have stripes?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 83,
+                "question": "Is it a mammal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 84,
+                "question": "Does it live in the wild?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 85,
+                "question": "Does it hibernate?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 86,
+                "question": "Is it a bear?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 87,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 88,
+                "question": "Does it live in the water?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 89,
+                "question": "Does it have tusks?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 90,
+                "question": "Is it a seal?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 91,
+                "question": "Is it alive?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 92,
+                "question": "Is it a weapon?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 93,
+                "question": "Is it typically thrown?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 94,
+                "question": "Is it typically fired from a gun?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 95,
+                "question": "Is it something that explodes?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 96,
+                "question": "Is it a bomb?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 97,
+                "question": "Is it a missile?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 98,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 99,
+                "question": "Is it a weapon?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 100,
+                "question": "Can it be used in close combat?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 101,
+                "question": "Is it typically thrown?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 102,
+                "question": "Is it a spear?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 103,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 104,
+                "question": "Can it be used as a weapon?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 105,
+                "question": "Is it typically longer than it is wide?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 106,
+                "question": "Is it made of wood?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 107,
+                "question": "Is it a stick?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 108,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 109,
+                "question": "Is it bigger than a house cat?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 110,
+                "question": "Does it have tusks?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 111,
+                "question": "Does it have spines or quills?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 112,
+                "question": "Does it live in the wild?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 113,
+                "question": "Is it typically found in North America?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 114,
+                "question": "Is it a caribou?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 115,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 116,
+                "question": "Is it a land animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 117,
+                "question": "Does it have stripes?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 118,
+                "question": "Is it a zebra?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 119,
+                "question": "Is it a fruit?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 120,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 121,
+                "question": "Is it a land animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 122,
+                "question": "Does it have antlers?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 123,
+                "question": "Is it a farm animal?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 124,
+                "question": "Does it have hooves?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 125,
+                "question": "Is it a cow?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 126,
+                "question": "Is the target an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 127,
+                "question": "Is it a fruit?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 128,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 129,
+                "question": "Is it a citrus fruit?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 130,
+                "question": "Is it a fruit that grows on a tree?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 131,
+                "question": "Does it have a large seed in the middle?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 132,
+                "question": "Is it a cherry?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 133,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 134,
+                "question": "Is it a fruit?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 135,
+                "question": "Does it grow on a tree?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 136,
+                "question": "Is it red?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 137,
+                "question": "Is it a cranberry?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 138,
+                "question": "Is it a tomato?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 139,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 140,
+                "question": "Does it live in the ocean?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 141,
+                "question": "Is it typically kept as livestock?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 142,
+                "question": "Is it a rodent?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 143,
+                "question": "Is it known for its fur?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 144,
+                "question": "Is it a mink?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 145,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 146,
+                "question": "Does it live in the ocean?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 147,
+                "question": "Is it covered in fur?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 148,
+                "question": "Is it typically white?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "yes",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 149,
+                "question": "Is it a primate?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 150,
+                "question": "Is it a gorilla?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 151,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 152,
+                "question": "Is it a carnivore?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 153,
+                "question": "Is it a large animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 154,
+                "question": "Does it have antlers?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 155,
+                "question": "Is it an elk?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 156,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 157,
+                "question": "Is it a plant?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 158,
+                "question": "Is it a fruit?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 159,
+                "question": "Is it orange?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "yes",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 160,
+                "question": "Is it a pumpkin?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 161,
+                "question": "Is it an animal?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "yes",
+                    "fox": "no",
+                    "partridge": "yes",
+                    "hamster": "yes",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 162,
+                "question": "Is it a root vegetable?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 163,
+                "question": "Is it a vegetable that grows underground?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "no",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            },
+            {
+                "question_step": 164,
+                "question": "Does it grow above ground?",
+                "item_specific_answers": {
+                    "elk": "yes",
+                    "chicken": "yes",
+                    "robin": "yes",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "yes",
+                    "hamster": "no",
+                    "buffalo": "yes"
+                }
+            },
+            {
+                "question_step": 165,
+                "question": "Is it green?",
+                "item_specific_answers": {
+                    "elk": "no",
+                    "chicken": "no",
+                    "robin": "no",
+                    "starling": "no",
+                    "fox": "yes",
+                    "partridge": "no",
+                    "hamster": "no",
+                    "buffalo": "no"
+                }
+            }
+        ]
+    }
+]

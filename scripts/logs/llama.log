@@ -1,0 +1,3892 @@
+/nas/home/yifjia/anaconda3/envs/afford/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Questioner: llama
+Oracle: openai
+Initializing Questioner backend: llama
+INFO 02-19 00:51:11 [importing.py:53] Triton module has been replaced with a placeholder.
+INFO 02-19 00:51:13 [__init__.py:239] Automatically detected platform cuda.
+`torch_dtype` is deprecated! Use `dtype` instead!
+INFO 02-19 00:51:45 [config.py:717] This model supports multiple tasks: {'generate', 'score', 'classify', 'reward', 'embed'}. Defaulting to 'generate'.
+INFO 02-19 00:51:45 [config.py:2003] Chunked prefill is enabled with max_num_batched_tokens=8192.
+INFO 02-19 00:51:48 [core.py:58] Initializing a V1 LLM engine (v0.8.5) with config: model='meta-llama/Meta-Llama-3.1-8B-Instruct', speculative_config=None, tokenizer='meta-llama/Meta-Llama-3.1-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, override_neuron_config=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=4096, download_dir=None, load_format=auto, tensor_parallel_size=1, pipeline_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto,  device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='auto', reasoning_backend=None), observability_config=ObservabilityConfig(show_hidden_metrics=False, otlp_traces_endpoint=None, collect_model_forward_time=False, collect_model_execute_time=False), seed=None, served_model_name=meta-llama/Meta-Llama-3.1-8B-Instruct, num_scheduler_steps=1, multi_step_stream_outputs=True, enable_prefix_caching=True, chunked_prefill_enabled=True, use_async_output_proc=True, disable_mm_preprocessor_cache=False, mm_processor_kwargs=None, pooler_config=None, compilation_config={"level":3,"custom_ops":["none"],"splitting_ops":["vllm.unified_attention","vllm.unified_attention_with_output"],"use_inductor":true,"compile_sizes":[],"use_cudagraph":true,"cudagraph_num_of_warmups":1,"cudagraph_capture_sizes":[512,504,496,488,480,472,464,456,448,440,432,424,416,408,400,392,384,376,368,360,352,344,336,328,320,312,304,296,288,280,272,264,256,248,240,232,224,216,208,200,192,184,176,168,160,152,144,136,128,120,112,104,96,88,80,72,64,56,48,40,32,24,16,8,4,2,1],"max_capture_size":512}
+WARNING 02-19 00:51:49 [utils.py:2522] Methods determine_num_available_blocks,device_config,get_cache_block_size_bytes,initialize_cache not implemented in <vllm.v1.worker.gpu_worker.Worker object at 0x7ff1467afa00>
+INFO 02-19 00:51:50 [parallel_state.py:1004] rank 0 in world size 1 is assigned as DP rank 0, PP rank 0, TP rank 0
+INFO 02-19 00:51:50 [cuda.py:221] Using Flash Attention backend on V1 engine.
+WARNING 02-19 00:51:50 [topk_topp_sampler.py:69] FlashInfer is not available. Falling back to the PyTorch-native implementation of top-p & top-k sampling. For the best performance, please install FlashInfer.
+INFO 02-19 00:51:50 [gpu_model_runner.py:1329] Starting to load model meta-llama/Meta-Llama-3.1-8B-Instruct...
+INFO 02-19 00:51:51 [weight_utils.py:265] Using model weights format ['*.safetensors']
+Loading safetensors checkpoint shards:   0% Completed | 0/4 [00:00<?, ?it/s]
+Loading safetensors checkpoint shards:  25% Completed | 1/4 [00:00<00:00,  4.82it/s]
+Loading safetensors checkpoint shards:  50% Completed | 2/4 [00:01<00:01,  1.58it/s]
+Loading safetensors checkpoint shards:  75% Completed | 3/4 [00:02<00:00,  1.28it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.18it/s]
+Loading safetensors checkpoint shards: 100% Completed | 4/4 [00:03<00:00,  1.32it/s]
+
+INFO 02-19 00:51:55 [loader.py:458] Loading weights took 3.17 seconds
+INFO 02-19 00:51:55 [gpu_model_runner.py:1347] Model loading took 14.9889 GiB and 4.695040 seconds
+INFO 02-19 00:52:08 [backends.py:420] Using cache directory: /nas/home/yifjia/.cache/vllm/torch_compile_cache/a9633646f2/rank_0_0 for vLLM's torch.compile
+INFO 02-19 00:52:08 [backends.py:430] Dynamo bytecode transform time: 13.22 s
+INFO 02-19 00:52:19 [backends.py:118] Directly load the compiled graph(s) for shape None from the cache, took 10.233 s
+INFO 02-19 00:52:21 [monitor.py:33] torch.compile takes 13.22 s in total
+INFO 02-19 00:52:22 [kv_cache_utils.py:634] GPU KV cache size: 214,880 tokens
+INFO 02-19 00:52:22 [kv_cache_utils.py:637] Maximum concurrency for 4,096 tokens per request: 52.46x
+INFO 02-19 00:52:45 [gpu_model_runner.py:1686] Graph capturing finished in 23 secs, took 1.59 GiB
+INFO 02-19 00:52:45 [core.py:159] init engine (profile, create kv cache, warmup model) took 50.09 seconds
+INFO 02-19 00:52:45 [core_client.py:439] Core engine process 0 ready.
+Initializing Oracle backend: openai
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+  0%|          | 0/90 [00:00<?, ?it/s][2026-02-19 00:52:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:52:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:06] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:08] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:11] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:18] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  1%|          | 1/90 [00:32<47:39, 32.13s/it][2026-02-19 00:53:19] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:20] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:25] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  2%|▏         | 2/90 [00:41<27:25, 18.69s/it][2026-02-19 00:53:29] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:30] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:31] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:35] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:37] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:40] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  3%|▎         | 3/90 [00:54<23:41, 16.34s/it][2026-02-19 00:53:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:44] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:47] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  4%|▍         | 4/90 [01:05<19:57, 13.92s/it][2026-02-19 00:53:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:53:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  6%|▌         | 5/90 [01:16<18:27, 13.03s/it][2026-02-19 00:54:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:06] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:07] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:10] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:12] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:16] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  7%|▋         | 6/90 [01:30<18:37, 13.30s/it][2026-02-19 00:54:17] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:18] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:23] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+
+====================
+Target: fox
+Question: Let's start playing. 
+
+Is the target a mammal?
+Answer: YES.
+Question: That narrows it down a bit. 
+
+Is the target a large mammal (typically weighing over 50 kg or 110 lbs)?
+Answer: NO.
+Question: So the target is a smaller mammal. 
+
+Does the target primarily live on land?
+Answer: YES.
+Question: So the target is a small land mammal. 
+
+Does the target have four legs?
+Answer: YES.
+Question: With four legs and living on land, I'm getting a good idea. 
+
+Does the target have a tail?
+Answer: YES.
+Question: With a tail and four legs, I'm starting to get a good picture. 
+
+Does the target typically live in a burrow or den?
+Answer: YES.
+Question: So the target is a small, four-legged, tailed mammal that lives in a burrow or den. 
+
+Is the target a rodent?
+Answer: NO.
+Question: So the target is a small, four-legged, tailed mammal that lives in a burrow or den, but it's not a rodent. 
+
+Does the target primarily eat insects?
+Answer: NO.
+Question: So the target is a small, four-legged, tailed mammal that lives in a burrow or den, eats something other than insects, and is not a rodent. 
+
+Is the target a carnivore?
+Answer: YES.
+Question: So the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den. 
+
+Is the target a common household pet?
+Answer: NO.
+Question: So the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den, is not a rodent, and is not typically kept as a pet. 
+
+Is the target native to North America?
+Answer: YES.
+Question: So the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den, is not a rodent, is not typically kept as a pet, and is native to North America. 
+
+Is the target a type of weasel?
+Answer: NO.
+Question: So the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den, is not a rodent, is not typically kept as a pet, is native to North America, and is not a type of weasel. 
+
+Does the target primarily eat small mammals?
+Answer: YES.
+Question: So the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den, is not a rodent, is not typically kept as a pet, is native to North America, and primarily eats small mammals. 
+
+Based on the options, I'm going to take a guess that the target is a hamster.
+Answer: NO.
+Question: I was close, but not quite there. 
+
+Let me think... Given that the target is a small, four-legged, tailed carnivorous mammal that lives in a burrow or den, is not a rodent, is not typically kept as a pet, is native to North America, and primarily eats small mammals, I'm going to take another guess.
+
+Based on the options, I'm going to guess that the target is a fox.
+Answer: Yes! That's correct.
+
+====================
+Target: fawn
+Question: Let's start playing. 
+
+Is the target a mammal?
+Answer: YES
+Question: That narrows it down a bit. 
+
+Does the target primarily live on land?
+Answer: YES
+Question: So the target is a land-dwelling mammal. 
+
+Does the target have four legs?
+Answer: YES
+Question: With four legs and being a mammal, I'm getting a good idea. 
+
+Does the target have a horn or antlers?
+Answer: YES
+Question: With four legs, being a mammal, and having horns or antlers, I'm getting closer. 
+
+Is the target a male?
+Answer: NO
+Question: So the target is a female mammal with four legs and horns or antlers. 
+
+Is the target a young animal?
+Answer: YES
+Question: So the target is a young female mammal with four legs and horns or antlers. 
+
+Is the target a fawn?
+Answer: Yes! That's correct.
+
+====================
+Target: zebra
+Question: Here's my first question:
+
+Is the target an animal that lives on land?
+Answer: YES
+Question: Here's my next question:
+
+Does the target have four legs?
+Answer: YES
+Question: That helps to narrow it down. Here's my next question:
+
+Does the target primarily live on land in North America?
+Answer: NO
+Question: So the target lives on land but not in North America. Here's my next question:
+
+Does the target primarily live in Africa?
+Answer: YES
+Question: With the target living in Africa and having four legs, that helps a lot. Here's my next question:
+
+Does the target have a large body size, typically weighing over 100 pounds?
+Answer: YES
+Question: With the target being large and living in Africa, I'm starting to get a good idea. Here's my next question:
+
+Is the target a carnivore?
+Answer: NO
+Question: So the target is a large, non-carnivorous animal living in Africa. Here's my next question:
+
+Does the target primarily live in a grassland or savannah environment?
+Answer: YES
+Question: With the target living in a grassland or savannah environment in Africa, I'm going to take a guess that it's a zebra. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: rooster
+Question: To start, is the target a bird?
+Answer: YES
+Question: Is the target a domesticated bird?
+Answer: YES
+Question: Does the target bird typically live in a cage?
+Answer: NO
+Question: Is the target bird commonly kept as a farm animal?
+Answer: YES
+Question: Does the target bird have a distinctive call that is often heard in the morning?
+Answer: YES
+Question: Is the target bird a male bird?
+Answer: YES
+Question: Does the target bird have bright plumage or feathers?
+Answer: YES
+Question: Is the target bird known for its distinctive "crowing" sound?
+Answer: YES
+Question: Based on your answers, I'm going to take a guess that the target is a rooster. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: owl
+Question: To start, is the target an animal that lives on land?
+Answer: Yes.
+Question: Next question: Does the target have four legs?
+Answer: No.
+Question: So the target is a two-legged animal. Next question: Does the target have feathers?
+Answer: Yes.
+Question: With feathers and two legs, I'm starting to get a good idea. Next question: Is the target a bird of prey?
+Answer: Yes.
+Question: With it being a bird of prey, I'm going to take a guess that the target is a falcon. Is that correct?
+Answer: No.
+Question: So the target is a bird of prey, but it's not a falcon. Next question: Is the target a large bird of prey, typically weighing more than 5 pounds?
+Answer: No.
+Question: So the target is a smaller bird of prey. Next question: Does the target have a distinctive call or screech?
+Answer: Yes.
+Question: With the distinctive call and being a smaller bird of prey, I'm going to take a guess that the target is an owl. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: falcon
+Question: Let's start playing. 
+
+Is the target an animal that lives on land?
+Answer: YES
+Question: Next question: Does the target have four legs?
+Answer: NO
+Question: So the target is a land animal but does not have four legs. 
+
+Next question: Can the target fly?
+Answer: YES
+Question: So the target is a land animal that can fly. 
+
+Next question: Is the target a bird?
+Answer: YES
+Question: With the target being a bird, I can narrow it down further. 
+
+Next question: Does the target have bright or vibrant plumage?
+Answer: NO
+Question: So the target is a bird, can fly, and does not have bright or vibrant plumage. 
+
+Next question: Is the target a relatively small bird?
+Answer: NO
+Question: So the target is a bird, can fly, does not have bright or vibrant plumage, and is not small. 
+
+Next question: Is the target a bird of prey?
+Answer: YES
+Question: With the target being a bird of prey, I can narrow it down further. 
+
+Next question: Is the target a bird of prey that is known for its speed?
+Answer: YES
+Question: So the target is a bird of prey, can fly, does not have bright or vibrant plumage, is not small, and is known for its speed. 
+
+Next question: Is the target a falcon?
+Answer: Yes! That's correct.
+
+====================
+Target: hamster
+Question: To start, is the target something that is typically found in the wild?
+Answer: No.
+Question: Is the target something that can be worn by a human?
+Answer: No.
+Question: Is the target something that is typically found indoors?
+Answer: Yes.
+Question: Is the target something that is a type of clothing or accessory?
+Answer: No.
+Question: Is the target a type of pet?
+Answer:[2026-02-19 00:54:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:25] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 00:54:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+  8%|▊         | 7/90 [01:41<17:21, 12.55s/it][2026-02-19 00:54:28] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/respname 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/llama/8_mcrae/dialogues.txt
+Error: lient.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 67%|██████▋   | 60/90 [11:42<05:37, 11.24s/it][2026-02-19 01:04:29] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:30] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:31] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:34] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 68%|██████▊   | 61/90 [11:48<04:41,  9.71s/it][2026-02-19 01:04:35] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:36] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:37] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:38] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:40] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 69%|██████▉   | 62/90 [11:54<04:02,  8.68s/it][2026-02-19 01:04:41] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:47] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 70%|███████   | 63/90 [12:03<03:53,  8.64s/it][2026-02-19 01:04:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 71%|███████   | 64/90 [12:07<03:14,  7.48s/it][2026-02-19 01:04:55] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:04:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 72%|███████▏  | 65/90 [12:11<02:40,  6.42s/it][2026-02-19 01:04:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+So the target is not a living thing. Is the target a type of vegetable?
+Answer: NO
+Question: So the target is not a living thing and not a vegetable. Is the target something that can be held in your hand?
+Answer: YES
+Question: So the target is something that can be held in your hand and is not a living thing or a vegetable. Is the target a type of fruit?
+Answer: YES
+Question: So the target is a type of fruit that can be held in your hand. Is the target typically yellow when it's ripe?
+Answer: NO
+Question: So the target is a type of fruit that can be held in your hand, but it's not typically yellow when it's ripe. Does the target have a pit or stone in the center?
+Answer: YES
+Question: So the target is a type of fruit that can be held in your hand, has a pit or stone in the center, and is not typically yellow when it's ripe. Based on the original list, I'm going to take a guess that the target is a pumpkin.
+Answer: NO
+Question: So the target is a type of fruit that can be held in your hand, has a pit or stone in the center, is not typically yellow when it's ripe, and is not a pumpkin. Based on the original list, I'm going to take a guess that the target is an avocado.
+Answer: Yes! That's correct.
+
+====================
+Target: cape
+Question: To start, is the target something that can be worn?
+Answer: YES
+Question: Is the target something that is typically worn on the upper body?
+Answer: YES
+Question: Is the target a type of shirt or top?
+Answer: NO
+Question: Is the target a type of dress?
+Answer: NO
+Question: Is the target a type of outerwear, often worn for fashion or to make a statement?
+Answer: YES
+Question: Does the target have a hood?
+Answer: NO
+Question: Is the target typically worn by women?
+Answer: NO
+Question: Is the target a type of cape?
+Answer: Yes! That's correct.
+
+====================
+Target: cape
+Question: Let's start playing. 
+
+Is the target something that you can hold in your hand?
+Answer: NO
+Question: Is the target something that is typically worn on the body?
+Answer: YES
+Question: Is the target something that covers the lower part of the body?
+Answer: NO
+Question: Is the target something that is typically worn on the upper body?
+Answer: YES
+Question: Is the target something that is worn on the back?
+Answer: YES
+Question: Is the target something that is typically worn for protection or defense?
+Answer: NO
+Question: Is the target something that is typically worn for a specific character or superhero?
+Answer: YES
+Question: Based on the context of the list, I'm going to take a guess that the target is a cape. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: trousers
+Question: To start, is the target something that can be held in one's hand?
+Answer: NO
+Question: Is the target something that is typically worn?
+Answer: YES
+Question: Is the target something that covers the upper body?
+Answer: NO
+Question: Is the target something that is typically worn for protection?
+Answer: NO
+Question: Is the target something that is worn for warmth?
+Answer: NO
+Question: Is the target something that is typically worn for fashion or style?
+Answer: YES
+Question: Is the target a type of garment that is typically worn by women?
+Answer: NO
+Question: Is the target a type of pants?
+Answer: YES
+Question: Based on the list, I'm going to take a guess that the target is "trousers".
+Answer: Yes! That's correct.
+
+====================
+Target: grenade
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is man-made?
+Answer: YES
+Question: Is the target something that is typically used for self-defense?
+Answer: NO
+Question: Is the target something that is commonly used for a specific task or function?
+Answer: YES
+Question: Is the target something that is used for a task related to cutting or chopping?
+Answer: NO
+Question: Is the target something that is typically worn on the lower part of the body?
+Answer: NO
+Question: Is the target something that is used for a task related to protection or covering?
+Answer: NO
+Question: Is the target something that is used for a task related to throwing or launching?
+Answer: YES
+Question: Based on the list, I'm going to take a guess that the target is a grenade. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: spear
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically used for a purpose other than clothing?
+Answer: YES
+Question: Is the target a weapon?
+Answer: YES
+Question: Is the target a ranged weapon, meaning it can be used to attack from a distance?
+Answer: YES
+Question: Is the target a handheld projectile launcher, such as a gun or a bow?
+Answer: NO
+Question: Is the target a traditional or historical weapon, rather than a modern one?
+Answer: YES
+Question: Is the target a device that uses stored energy to propel a projectile, such as a spring or torsion?
+Answer: NO
+Question: Is the target a simple, non-mechanical device that relies on manual force to propel a projectile?
+Answer: YES
+Question: Is the target a spear?
+Answer: Yes! That's correct.
+
+====================
+Target: missile
+Question: To start, is the target something that can be held in your hand?
+Answer: NO.
+Question: Is the target man-made?
+Answer: YES.
+Question: Is the target something that can be worn?
+Answer: NO.
+Question: Is the target used for transportation or travel in any way?
+Answer: NO.
+Question: Is the target something that can be thrown?
+Answer: YES.
+Question: Is the target typically used for military or defense purposes?
+Answer: YES.
+Question: Based on the information, I'm going to take a guess that the target is a "missile". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: swimsuit
+Question: To start, is the target something that you can wear?
+Answer: YES
+Question: Is the target something that is typically worn on the upper body?
+Answer: NO
+Question: Is the target something that is typically worn for protection or warmth?
+Answer: NO
+Question: Is the target something that is typically worn for swimming or water activities?
+Answer: YES
+Question: Is the target a swimsuit?
+Answer: Yes! That's correct.
+
+====================
+Target: trousers
+Question: To start, is the target something that you can wear?
+Answer: YES
+Question: Is the target something that is typically worn on the lower half of the body?
+Answer: YES
+Question: Is the target a type of pants?
+Answer: YES
+Question: Is the target a casual type of pants, such as pajamas or trousers?
+Answer: YES
+Question: Is the target a pair of pajamas?
+Answer: NO
+Question: Is the target a pair of trousers?
+Answer: Yes! That's correct.
+
+====================
+Target: socks
+Question: To start, is the target something that you can hold in your hand?
+Answer: Yes.
+Question: Is the target a type of food?
+Answer: No.
+Question: Is the target something that is typically worn?
+Answer: Yes.
+Question: Is the target something that is worn on the upper body?
+Answer: No.
+Question: Is the target something that is worn on the lower body?
+Answer: Yes.
+Question: Is the target a type of clothing that covers the feet?
+Answer: Yes.
+Question: Based on the original list, I'm going to guess that the target is "socks". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: apple
+Question: To start, is the target something that can be held in your hand?
+Answer: Yes.
+Question: Is the target a type of fruit?
+Answer: Yes.
+Question: Is the target typically red?
+Answer: Yes.
+Question: Is the target a type of berry?
+Answer: No.
+Question: Is the target a type of apple?
+Answer: Yes! That's correct.
+
+====================
+Target: cherry
+Question: Let's start playing the guessing game. 
+
+Is the target something that you can hold in your hand?
+Answer: YES
+Question: Is the target a type of food or fruit?
+Answer: YES
+Question: Is the target a type of stone fruit?
+Answer: YES
+Question: Is the target a cherry?
+Answer: Yes! That's correct.
+
+====================
+Target: coconut
+Question: To start, is the target something that you can hold in your hand?
+Answer: Yes.
+Question: [2026-02-19 01:05:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:06] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 73%|███████▎  | 66/90 [12:23<03:08,  7.85s/it][2026-02-19 01:05:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:10] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:11] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:12] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:16] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 74%|███████▍  | 67/90 [12:29<02:54,  7.58s/it][2026-02-19 01:05:17] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:18] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:19] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:20] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:23] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 76%|███████▌  | 68/90 [12:37<02:45,  7.51s/it][2026-02-19 01:05:25] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:26] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:28] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:29] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:31] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:32] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:34] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:35] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:36] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:38] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:40] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 77%|███████▋  | 69/90 [12:54<03:40, 10.49s/it][2026-02-19 01:05:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:44] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 78%|███████▊  | 70/90 [13:02<03:10,  9.55s/it][2026-02-19 01:05:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:55] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 79%|███████▉  | 71/90 [13:09<02:48,  8.85s/it][2026-02-19 01:05:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:05:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:05] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 80%|████████  | 72/90 [13:19<02:43,  9.11s/it][2026-02-19 01:06:06] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:07] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:08] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:10] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:11] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:12] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:15] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:16] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 81%|████████  | 73/90 [13:30<02:48,  9.92s/it][2026-02-19 01:06:17] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:18] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:20] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:23] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 82%|████████▏ | 74/90 [13:37<02:21,  8.86s/it][2026-02-19 01:06:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:25] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:26] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:28] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:29] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:30] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:32] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:34] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 83%|████████▎ | 75/90 [13:48<02:24,  9.64s/it][2026-02-19 01:06:35] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:36] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:37] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:38] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:40] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:41] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:44] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 84%|████████▍ | 76/90 [13:58<02:16,  9.72s/it][2026-02-19 01:06:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:47] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+Is the target something that is typically sweet?
+Answer: No.
+Question: Is the target man-made?
+Answer: No.
+Question: Is the target a type of fruit?
+Answer: Yes.
+Question: Is the target a type of stone fruit?
+Answer: No.
+Question: Does the target have a pit or stone in the center?
+Answer: Yes.
+Question: Based on the fact that it's a type of fruit with a pit, I'm going to take a guess that the target is a pear. Is that correct?
+Answer: No.
+Question: Based on the fact that it's a type of fruit with a pit, I'm going to try again. Is the target a coconut?
+Answer: Yes! That's correct.
+
+====================
+Target: socks
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically edible?
+Answer: NO
+Question: Is the target something that is commonly worn?
+Answer: YES
+Question: Is the target something that covers the foot?
+Answer: YES
+Question: Based on your previous answers, I'm going to take a guess that the target is "boots". Is that correct?
+Answer: NO
+Question: Based on your previous answers, I'm going to guess that the target is "socks". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: blouse
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically considered a food item?
+Answer: NO
+Question: Is the target something that is worn on the lower part of the body?
+Answer: NO
+Question: Is the target something that is made of fabric?
+Answer: YES
+Question: Is the target something that is typically worn on the upper body?
+Answer: YES
+Question: Is the target a type of shirt or top?
+Answer: YES
+Question: Is the target a type of blouse?
+Answer: Yes! That's correct.
+
+====================
+Target: swimsuit
+Question: To start, is the target something that you can hold in your hand?
+Answer: NO
+Question: Is the target something that can be worn?
+Answer: YES
+Question: Is the target primarily worn on the upper body?
+Answer: NO
+Question: Is the target typically worn on the lower body?
+Answer: NO
+Question: Is the target something that covers the feet?
+Answer: NO
+Question: Is the target something that is typically worn for protection or modesty?
+Answer: YES
+Question: Is the target something that is worn by women?
+Answer: YES
+Question: Is the target a type of undergarment?
+Answer: NO
+Question: Is the target a type of outerwear?
+Answer: YES
+Question: Is the target a type of dress?
+Answer: NO
+Question: Is the target a type of outerwear that is typically worn for formal occasions?
+Answer: NO
+Question: Is the target a type of outerwear that is typically worn for casual or everyday activities?
+Answer: NO
+Question: Is the target a type of outerwear that is typically worn for water activities?
+Answer: YES
+Question: Based on the previous answers, I'm going to take a guess that the target is a swimsuit.
+Answer: Yes! That's correct.
+
+====================
+Target: broccoli
+Question: To start, is the target something that can be held in your hand?
+Answer: Yes.
+Question: Is the target something that is typically considered a food item?
+Answer: Yes.
+Question: Is the target a vegetable?
+Answer: Yes.
+Question: Is the target typically green in color?
+Answer: Yes.
+Question: Is the target a type of legume?
+Answer: No.
+Question: Does the target grow above ground?
+Answer: Yes.
+Question: Is the target a type of broccoli?
+Answer: Yes! That's correct.
+
+====================
+Target: onions
+Question: To start, is the target something that you can hold in your hand?
+Answer: Yes.
+Question: Is the target something that is typically considered a food item?
+Answer: Yes.
+Question: Is the target a root vegetable?
+Answer: Yes.
+Question: Is the target typically orange in color?
+Answer: No.
+Question: Is the target commonly eaten raw?
+Answer: Yes.
+Question: Is the target a potato?
+Answer: No.
+Question: Is the target an olive?
+Answer: No.
+Question: Is the target a type of onion?
+Answer: Yes! That's correct.
+
+====================
+Target: cauliflower
+Question: To start, is the target something that you can hold in your hand?
+Answer: Yes.
+Question: Is the target something that is typically worn?
+Answer: No.
+Question: Is the target a type of food?
+Answer: Yes.
+Question: Is the target a type of legume?
+Answer: No.
+Question: Is the target a vegetable?
+Answer: Yes.
+Question: Is the target typically green in color?
+Answer: No.
+Question: Does the target have a head or a main cluster of florets?
+Answer: Yes.
+Question: Based on the fact that it's a vegetable, has a head or florets, and is not green, I'm going to take a guess that the target is a cauliflower. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: spear
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is man-made?
+Answer: YES
+Question: Is the target a type of firearm?
+Answer: NO
+Question: Is the target used for a purpose related to hunting or shooting?
+Answer: YES
+Question: Is the target a type of firearm's ammunition?
+Answer: NO
+Question: Is the target a type of firearm itself?
+Answer: NO
+Question: Is the target a type of projectile that is typically launched from a firearm?
+Answer: NO
+Question: Is the target a type of firearm accessory, such as a stock or a grip?
+Answer: NO
+Question: Is the target a type of hunting tool that is used to throw or propel something?
+Answer: YES
+Question: Based on the options, I'm going to take a guess that the target is a "spear". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: grenade
+Question: Let's start playing. 
+
+Is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target a type of food?
+Answer: NO
+Question: Is the target a type of projectile?
+Answer: YES
+Question: Is the target a firearm?
+Answer: NO
+Question: Is the target something that is typically propelled by explosive force?
+Answer: YES
+Question: Is the target a grenade?
+Answer: Yes! That's correct.
+
+====================
+Target: bomb
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target a type of fruit?
+Answer: NO
+Question: Is the target man-made?
+Answer: YES
+Question: Is the target something that can be used as a weapon?
+Answer: YES
+Question: Is the target a handheld firearm?
+Answer: NO
+Question: Is the target a type of projectile launcher?
+Answer: NO
+Question: Is the target a handheld object that is typically used for hunting or self-defense?
+Answer: NO
+Question: Is the target something that can be used to propel an arrow?
+Answer: NO
+Question: Based on the previous answers, I'm going to take a guess that the target is a crossbow.
+Answer: NO
+Question: Based on the previous answers, I'm going to guess that the target is a rock.
+Answer: NO
+Question: Based on the previous answers, I'm going to guess that the target is a bomb.
+Answer: Yes! That's correct.
+
+====================
+Target: rhubarb
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target a man-made object?
+Answer: NO
+Question: Is the target a type of fruit?
+Answer: NO
+Question: Is the target a type of plant?
+Answer: YES
+Question: Is the target typically found in a garden?
+Answer: YES
+Question: Is the target a type of vegetable?
+Answer: YES
+Question: Is the target often eaten raw?
+Answer: NO
+Question: Is the target commonly used in pies?
+Answer: YES
+Question: Based on the fact that it's a vegetable, often found in gardens, and commonly used in pies, I'm going to take a guess that the target is a rhubarb.
+Answer: Yes! That's correct.
+
+====================
+Target: rhubarb
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically used for a purpose other than eating or consuming?
+Answer: NO
+Question: Is the target a type of fruit?
+Answer: NO
+Question: Is the target a type of tool?
+Answer: NO
+Question: Is the target a type of food that is often eaten as a sweet or dessert?
+Answer: YES
+Question: Is the target a type of stone fruit?
+Answer: NO
+Question: [2026-02-19 01:06:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:06:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 86%|████████▌ | 77/90 [14:15<02:33, 11.79s/it][2026-02-19 01:07:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:05] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:06] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:07] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:08] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 87%|████████▋ | 78/90 [14:22<02:03, 10.31s/it][2026-02-19 01:07:10] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:12] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:13] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:15] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:16] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:17] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:23] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 88%|████████▊ | 79/90 [14:38<02:13, 12.17s/it][2026-02-19 01:07:25] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:26] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:28] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:30] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:31] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 89%|████████▉ | 80/90 [14:45<01:46, 10.61s/it][2026-02-19 01:07:32] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:34] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:35] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:36] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:37] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:41] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 90%|█████████ | 81/90 [14:59<01:43, 11.48s/it][2026-02-19 01:07:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 91%|█████████ | 82/90 [15:07<01:23, 10.41s/it][2026-02-19 01:07:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:55] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:07:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:05] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:07] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 92%|█████████▏| 83/90 [15:21<01:20, 11.49s/it][2026-02-19 01:08:08] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:10] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:11] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:12] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:14] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:15] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:17] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:18] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:19] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:22] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:24] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:26] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:27] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:29] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:30] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:32] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:33] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:37] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 93%|█████████▎| 84/90 [15:51<01:43, 17.24s/it][2026-02-19 01:08:38] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:39] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:40] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+Is the target a type of fruit that is often eaten in the summer?
+Answer: NO
+Question: Is the target typically eaten raw?
+Answer: NO
+Question: Is the target a type of fruit that is often baked or cooked in pies?
+Answer: YES
+Question: Based on the fact that it's often baked or cooked in pies, I'm going to take a guess that the target is a plum.
+Answer: NO
+Question: Based on the fact that it's often baked or cooked in pies, I'm going to try again. Is the target an apple?
+Answer: NO
+Question: Based on the original list, I'm going to try again. Is the target a peach?
+Answer: NO
+Question: Based on the original list, I'm going to try again. Is the target a rhubarb?
+Answer: Yes! That's correct.
+
+====================
+Target: tomato
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically used for a purpose other than eating or cutting?
+Answer: NO
+Question: Is the target a type of fruit?
+Answer: YES
+Question: Is the target typically sweet?
+Answer: NO
+Question: Is the target often eaten raw?
+Answer: YES
+Question: Is the target typically red?
+Answer: YES
+Question: Is the target a type of tomato?
+Answer: Yes! That's correct.
+
+====================
+Target: missile
+Question: To start, is the target something that can be held in your hand?
+Answer: NO
+Question: Is the target something that is typically used for launching or propelling something else?
+Answer: YES
+Question: Is the target a man-made object?
+Answer: YES
+Question: Is the target a device that uses a stored form of energy (like a spring or explosive) to propel something?
+Answer: YES
+Question: Is the target a device that is designed for military or combat use?
+Answer: YES
+Question: Is the target a portable, shoulder-fired weapon?
+Answer: NO
+Question: Is the target a device that is mounted on a vehicle or a fixed location?
+Answer: YES
+Question: Is the target a type of artillery or cannon?
+Answer: NO
+Question: Is the target a type of rocket launcher?
+Answer: NO
+Question: Based on the options, I'm going to take a guess that the target is a catapult.
+Answer: NO
+Question: Based on the options and previous answers, I'm going to guess that the target is a missile.
+Answer: Yes! That's correct.
+
+====================
+Target: rocket
+Question: To start, is the target something that can be held in your hand?
+Answer: NO
+Question: Is the target man-made?
+Answer: YES
+Question: Is the target something that is typically used for propulsion or launching?
+Answer: YES
+Question: Is the target a type of artillery or a device used to launch projectiles?
+Answer: NO
+Question: Is the target a type of vehicle, specifically one that can carry people or cargo into space?
+Answer: YES
+Question: Based on the options, I'm going to take a guess that the target is a "rocket". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: axe
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target a type of food?
+Answer: NO
+Question: Is the target a man-made object?
+Answer: YES
+Question: Is the target used for launching or propelling something?
+Answer: NO
+Question: Is the target a type of weapon?
+Answer: YES
+Question: Is the target a handheld firearm?
+Answer: NO
+Question: Is the target a type of ranged weapon that uses a spring or elastic force to propel projectiles?
+Answer: NO
+Question: Is the target a type of handheld projectile launcher, such as a catapult or a bazooka?
+Answer: NO
+Question: Based on the options, I'm going to take a guess that the target is a catapult.
+Answer: NO
+Question: Based on the options, I'm going to guess that the target is a bazooka.
+Answer: NO
+Question: Based on the remaining options, I'm going to guess that the target is an axe.
+Answer: Yes! That's correct.
+
+====================
+Target: potato
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically edible?
+Answer: YES
+Question: Is the target a root vegetable?
+Answer: YES
+Question: Is the target commonly eaten raw?
+Answer: NO
+Question: Is the target typically cooked before eating?
+Answer: YES
+Question: Is the target commonly mashed or pureed as a side dish?
+Answer: YES
+Question: Based on your answers, I'm going to take a guess that the target is a potato. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: peas
+Question: To start, is the target something that can be held in your hand?
+Answer: YES
+Question: Is the target something that is typically not living?
+Answer: NO
+Question: Is the target a type of vegetable?
+Answer: YES
+Question: Is the target a type of leafy green vegetable?
+Answer: NO
+Question: Does the target grow underground?
+Answer: NO
+Question: Does the target grow on a plant that is typically eaten as a whole?
+Answer: NO
+Question: Is the target a type of root vegetable?
+Answer: NO
+Question: Does the target have a head or a cluster of parts that are typically eaten together?
+Answer: YES
+Question: Is the target a type of cruciferous vegetable?
+Answer: NO
+Question: Does the target have a hard outer layer that is typically removed before eating?
+Answer: NO
+Question: Is the target a type of vegetable that is often eaten in the pod, such as peas or beans?
+Answer: YES
+Question: Based on the options, I'm going to take a guess that the target is "peas". Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: mushroom
+Question: To start, is the target something that can be held in your hand?
+Answer: Yes.
+Question: Is the target something that is typically used for a purpose other than food or eating?
+Answer: No.
+Question: Is the target a vegetable?
+Answer: No.
+Question: Is the target a type of root vegetable?
+Answer: No.
+Question: Is the target something that can be eaten raw?
+Answer: No.
+Question: Is the target a type of plant that grows above ground?
+Answer: Yes.
+Question: Is the target a type of vegetable that is often used in savory dishes?
+Answer: No.
+Question: Is the target a type of vegetable that is often used in sweet dishes?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in soups?
+Answer: No.
+Question: Is the target a type of vegetable that is typically used in a savory dish that is often associated with a specific holiday or tradition?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of savory dish, such as a sauce or a condiment?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of cuisine, such as Italian or Asian?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a sauce or a condiment, like a sauce made from it?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific part of a dish, such as a topping or a garnish?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of cooking method, such as grilling or roasting?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of food item, such as a soup, stew, or casserole?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of food item, such as a salad?
+Answer: No.
+Question: Is the target a type of vegetable that is commonly used in a specific type of food item, such as a sandwich?
+Answer: No.
+Question: Based on the previous answers, I'm going to take a guess that the target is an onion.
+Answer: No.
+Question: Based on the list of options, I'm going to try to guess again. Since the target is not an onion, and it's something that can be held in your hand, is used for a purpose other than food, and is a type of plant that grows above ground, I'm going to guess that the target is a mushroom.
+Answer: Yes! That's correct.
+
+====================
+Target: lime
+Question: To start, is the target a fruit?
+Answer: YES
+Question: Is the target a citrus fruit?
+Answer: YES
+Question: Does the target have a peel that is typically yellow when it's ripe?
+Answer: NO
+Question: [2026-02-19 01:08:41] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:47] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 94%|█████████▍| 85/90 [16:02<01:16, 15.38s/it][2026-02-19 01:08:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:50] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:53] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:55] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:57] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 96%|█████████▌| 86/90 [16:11<00:53, 13.39s/it][2026-02-19 01:08:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:08:59] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:05] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:07] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:09] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:26] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:09:43] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+Is the target usually small enough to be held in one hand?
+Answer: YES
+Question: Does the target have seeds?
+Answer: YES
+Question: Is the target typically sour to taste?
+Answer: YES
+Question: Is the target usually green when it's ripe?
+Answer: YES
+Question: Based on your answers, I'm going to take a guess that the target is a lime. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: banana
+Question: Let's start playing. 
+
+Is the target a type of fruit?
+Answer: YES
+Question: That narrows it down a bit. 
+
+Is the target a citrus fruit?
+Answer: NO
+Question: So the target is a fruit, but it's not a citrus fruit. 
+
+Is the target a stone fruit?
+Answer: NO
+Question: So the target is a fruit, not a citrus fruit, and not a stone fruit. 
+
+Does the target grow on a tree?
+Answer: YES
+Question: So the target is a fruit that grows on a tree. 
+
+Is the target typically yellow when it's ripe?
+Answer: YES
+Question: So the target is a yellow fruit that grows on a tree. 
+
+Is the target a banana?
+Answer: Yes! That's correct.
+
+====================
+Target: coconut
+Question: Let's start playing. 
+
+Is the target a sweet food?
+Answer: NO
+Question: Is the target a root vegetable?
+Answer: NO
+Question: Is the target a type of fruit?
+Answer: YES
+Question: Is the target a citrus fruit?
+Answer: NO
+Question: Does the target grow on a bush or a small shrub?
+Answer: NO
+Question: Is the target typically eaten as a whole fruit?
+Answer: YES
+Question: Does the target have a pit or stone in the center?
+Answer: YES
+Question: Is the target a type of berry?
+Answer: YES
+Question: Based on the fact that it's a type of berry, has a pit, and is not a citrus fruit, I'm going to take a guess that the target is a raspberry. Is that correct?
+Answer: NO
+Question: Based on the fact that it's a type of berry, has a pit, and is not a citrus fruit, I'm going to try again. Is the target a cherry?
+Answer: NO
+Question: Based on the list of candidates, I'm going to try again. Is the target a raspberry's close relative, the strawberry is not on the list, so I'm going to guess the other option, the raspberry's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the apricot is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to
+Answer: NO
+Question: I got a bit carried away there. Let me try a simpler approach.
+
+Based on the fact that it's a type of berry, has a pit, and is not a citrus fruit, I'm going to guess that the target is a plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the other option, the plum's other close relative, the plum is not on the list, so I'm going to guess the
+Answer: NO
+Question: Let me try a simpler approach.
+
+Based on the list of candidates, I'm going to guess that the target is a raspberry's close relative, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the
+Answer: NO
+Question: [2026-02-19 01:10:02] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:04] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:21] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:38] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 97%|█████████▋| 87/90 [17:52<01:58, 39.65s/it][2026-02-19 01:10:41] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:42] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:44] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:45] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:46] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:48] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 98%|█████████▊| 88/90 [18:02<01:01, 30.69s/it][2026-02-19 01:10:49] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:51] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:52] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:54] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+ 99%|█████████▉| 89/90 [18:08<00:23, 23.35s/it][2026-02-19 01:10:55] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:56] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:10:58] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:11:00] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:11:01] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:11:03] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+[2026-02-19 01:11:05] INFO _client.py:1025: HTTP Request: POST https://api.openai.com/v1/responses "HTTP/1.1 200 OK"
+100%|██████████| 90/90 [18:19<00:00, 19.75s/it]100%|██████████| 90/90 [18:19<00:00, 12.22s/it]
+Let me try a simpler approach.
+
+Based on the list of candidates, I'm going to guess that the target is a cherry.
+Answer: NO
+Question: Based on the list of candidates, I'm going to guess that the target is a raspberry.
+Answer: NO
+Question: Based on the list of candidates, I'm going to guess that the target is a lemon is not a berry, so I'm going to guess the other option, the target is a raspberry's close relative, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum
+Answer: NO
+Question: I think I got a bit carried away again.
+
+Let me try a simpler approach.
+
+Based on the list of candidates, I'm going to guess that the target is a raspberry. If that's not correct, I'll try to think of other options.
+
+Since you said the target is a berry, has a pit, and is not a citrus fruit, I'm going to try to eliminate the options that don't fit those criteria.
+
+The only berry left on the list is the raspberry. However, you said the target is not a raspberry.
+
+The only other berry that has a pit is the coconut is not a berry, the lemon is not a berry, the orange is not a berry, the beets is not a berry, the mushroom is not a berry, the beans is not a berry, the radish is not a berry, the raspberry is not the answer, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum is not on the list, so I'm going to guess the other option, the plum
+Answer: YES! That's correct. The target is a coconut.
+
+====================
+Target: carrot
+Question: Let's start playing. 
+
+Is the target a fruit?
+Answer: NO
+Question: So the target is not a fruit. 
+
+Is the target something that is typically eaten raw?
+Answer: YES
+Question: So the target is not a fruit and is typically eaten raw. 
+
+Is the target a vegetable that grows underground?
+Answer: YES
+Question: So the target is a vegetable that grows underground and is typically eaten raw. 
+
+Is the target a root vegetable?
+Answer: YES
+Question: So the target is a root vegetable that grows underground and is typically eaten raw. 
+
+Is the target typically orange in color?
+Answer: YES
+Question: With that information, I'm going to take a guess that the target is a carrot. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: pickle
+Question: To start, is the target a type of fruit?
+Answer: NO
+Question: So the target is not a fruit. That helps narrow it down. Is the target something that is typically savory rather than sweet?
+Answer: YES
+Question: So the target is savory and not a fruit. Is the target something that is often pickled?
+Answer: YES
+Question: With that clue, I'm going to take a guess that the target is a pickle. Is that correct?
+Answer: Yes! That's correct.
+
+====================
+Target: onions
+Question: Let's start playing the guessing game. 
+
+Is the target a sweet food?
+Answer: NO
+Question: So the target is not a sweet food. 
+
+Is the target typically savory or used in savory dishes?
+Answer: YES
+Question: So the target is typically savory or used in savory dishes. 
+
+Is the target a root vegetable?
+Answer: YES
+Question: So the target is a root vegetable. 
+
+Is the target often pickled or used in pickling?
+Answer: YES
+Question: So the target is a root vegetable that's often pickled or used in pickling. 
+
+Is the target a beet?
+Answer: NO
+Question: So the target is a root vegetable that's often pickled or used in pickling, but it's not a beet. 
+
+Is the target a bean?
+Answer: NO
+Question: So the target is a root vegetable that's often pickled or used in pickling, but it's neither a beet nor a bean. 
+
+Is the target an onion?
+Answer: Yes! That's correct.

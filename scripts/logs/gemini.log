@@ -1,0 +1,3383 @@
+/nas/home/yifjia/anaconda3/envs/afford/lib/python3.10/site-packages/transformers/utils/hub.py:110: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+Questioner: gemini
+Oracle: openai
+Initializing Questioner backend: gemini
+Initializing Oracle backend: openai
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+  0%|          | 0/90 [00:00<?, ?it/s]  1%|          | 1/90 [00:11<16:41, 11.25s/it]  2%|▏         | 2/90 [00:19<14:05,  9.61s/it]  3%|▎         | 3/90 [00:27<12:39,  8.72s/it]  4%|▍         | 4/90 [00:34<11:47,  8.22s/it]  6%|▌         | 5/90 [00:39<09:54,  7.00s/it]  7%|▋         | 6/90 [00:46<09:30,  6.79s/it]  8%|▊         | 7/90 [00:52<09:01,  6.53s/it]  9%|▉         | 8/90 [01:02<10:37,  7.77s/it] 10%|█         | 9/90 [01:09<10:11,  7.54s/it] 11%|█         | 10/90 [01:19<11:08,  8.35s/it] 12%|█▏        | 11/90 [01:25<10:07,  7.69s/it] 13%|█▎        | 12/90 [01:35<10:39,  8.20s/it] 14%|█▍        | 13/90 [01:44<10:49,  8.43s/it] 16%|█▌        | 14/90 [01:50<09:54,  7.83s/it] 17%|█▋        | 15/90 [01:55<08:32,  6.84s/it] 18%|█▊        | 16/90 [02:05<09:39,  7.83s/it] 19%|█▉        | 17/90 [02:11<09:01,  7.41s/it] 20%|██        | 18/90 [02:17<08:07,  6.77s/it] 21%|██        | 19/90 [02:25<08:34,  7.24s/it] 22%|██▏       | 20/90 [02:29<07:27,  6.39s/it] 23%|██▎       | 21/90 [02:38<08:08,  7.08s/it] 24%|██▍       | 22/90 [02:40<06:22,  5.62s/it] 26%|██▌       | 23/90 [02:46<06:19,  5.67s/it] 27%|██▋       | 24/90 [02:52<06:26,  5.86s/it]
+====================
+Target: fox
+Question: Is it bigger than a cat?
+Answer: No.
+Question: Is it a bird?
+Answer: No.
+Question: Does it live in the wild?
+Answer: Yes.
+Question: Is it typically found in North America?
+Answer: Yes.
+Question: Is it a rodent?
+Answer: No.
+Question: Is it a carnivore?
+Answer: Yes.
+Question: Is it the fox?
+Answer: Yes! That's correct.
+
+====================
+Target: fawn
+Question: Is it an animal that lives in the wild?
+Answer: YES
+Question: Does it have feathers?
+Answer: NO
+Question: Is it a mammal?
+Answer: YES
+Question: Is it a large animal?
+Answer: NO
+Question: Does it have horns or antlers?
+Answer: YES
+Question: Is it a deer?
+Answer: YES! That's correct.
+
+====================
+Target: zebra
+Question: Is it an animal that flies?
+Answer: NO.
+Question: Does it live in the water?
+Answer: NO.
+Question: Is it a large animal?
+Answer: YES.
+Question: Is it a mammal?
+Answer: YES.
+Question: Does it have stripes?
+Answer: YES.
+Question: Is it a zebra?
+Answer: Yes! That's correct.
+
+====================
+Target: rooster
+Question: Is it a mammal?
+Answer: NO
+Question: Does it lay eggs?
+Answer: YES
+Question: Is it typically kept as a pet?
+Answer: NO
+Question: Does it have feathers?
+Answer: YES
+Question: Is it known for a distinctive call?
+Answer: YES
+Question: Is it a rooster?
+Answer: Yes! That's correct.
+
+====================
+Target: owl
+Question: Okay, I understand. I'll ask yes/no questions to guess the animal from your list.
+
+Let's start!
+
+**Does the animal typically lay eggs?**
+Answer: YES
+Question: Okay, that narrows it down!
+
+Now for my next question:
+
+**Is the animal a mammal?**
+Answer: NO
+Question: Okay, not a mammal and it lays eggs. That's very helpful!
+
+My next question:
+
+**Does the animal have feathers?**
+Answer: YES
+Question: Okay, it lays eggs, is not a mammal, and has feathers.
+
+This is a good one! My guess is...
+
+**Is it an owl?**
+Answer: Yes! That's correct.
+
+====================
+Target: falcon
+Question: Is it a mammal?
+Answer: NO.
+Question: Can it fly?
+Answer: YES.
+Question: Is it typically kept as a pet?
+Answer: NO.
+Question: Is it a bird of prey?
+Answer: YES.
+Question: Is it nocturnal?
+Answer: NO.
+Question: Is it a falcon?
+Answer: Yes! That's correct.
+
+====================
+Target: hamster
+Question: Is it an animal?
+Answer: Yes.
+Question: Does it have stripes?
+Answer: No.
+Question: Is it a pet?
+Answer: Yes.
+Question: Is it bigger than a cat?
+Answer: No.
+Question: Is it a hamster?
+Answer: Yes! That's correct.
+
+====================
+Target: dolphin
+Question: Is it an animal?
+Answer: YES
+Question: Is it a wild animal?
+Answer: YES
+Question: Is it found in North America?
+Answer: YES
+Question: Does it belong to the cat family?
+Answer: NO
+Question: Does it build dams?
+Answer: NO
+Question: Is it typically found in water for most of its life?
+Answer: YES
+Question: Is it a dolphin?
+Answer: Yes! That's correct.
+
+====================
+Target: deer
+Question: Okay, I'm ready!
+
+Is your target an animal?
+Answer: YES
+Question: Okay, great!
+
+Does the animal typically live in Africa?
+Answer: NO
+Question: Got it. So, an animal, not typically African.
+
+Is your animal known for being a large, powerful creature?
+Answer: NO
+Question: Hmm, an animal, not typically African, and not known for being large and powerful.
+
+Does your animal have antlers?
+Answer: YES
+Question: Okay, an animal, not African, not large/powerful, and has antlers.
+
+Is your animal a deer?
+Answer: Yes! That's correct.
+
+====================
+Target: boots
+Question: Is it an animal?
+Answer: NO
+Question: Is it something you wear?
+Answer: YES
+Question: Does it typically cover your legs?
+Answer: NO
+Question: Is it worn on your upper body?
+Answer: NO
+Question: Is it an accessory that does not cover the main parts of your body (like a hat, scarf, or gloves)?
+Answer: NO
+Question: Is it worn on your feet?
+Answer: YES
+Question: Is it boots?
+Answer: Yes! That's correct.
+
+====================
+Target: tie
+Question: Is it alive?
+Answer: NO
+Question: Is it an article of clothing?
+Answer: YES
+Question: Is it worn on the upper body?
+Answer: NO
+Question: Is it worn around the neck?
+Answer: YES
+Question: Is it a tie?
+Answer: Yes! That's correct.
+
+====================
+Target: belt
+Question: Is it an animal?
+Answer: NO
+Question: Is it something you wear?
+Answer: YES
+Question: Is it typically worn on the upper body?
+Answer: NO
+Question: Is it typically worn on the lower body?
+Answer: YES
+Question: Does it have legs?
+Answer: NO
+Question: Is it something you wear around your neck or waist?
+Answer: YES
+Question: Is it used to hold up other clothing?
+Answer: YES
+Question: Is it a belt?
+Answer: Yes! That's correct.
+
+====================
+Target: seal
+Question: Is it a weapon?
+Answer: NO
+Question: Is it an animal?
+Answer: YES
+Question: Can it fly?
+Answer: NO
+Question: Is it typically found in the wild?
+Answer: YES
+Question: Is it larger than a breadbox?
+Answer: YES
+Question: Is it known for having antlers?
+Answer: NO
+Question: Is it known for being able to swim very well?
+Answer: YES
+Question: Is it a seal?
+Answer: YES! That's correct.
+
+====================
+Target: bear
+Question: Is it an animal?
+Answer: YES
+Question: Does it have stripes?
+Answer: NO
+Question: Is it a mammal?
+Answer: YES
+Question: Does it live in the wild?
+Answer: YES
+Question: Does it hibernate?
+Answer: YES
+Question: Is it a bear?
+Answer: Yes! That's correct.
+
+====================
+Target: seal
+Question: Is it an animal?
+Answer: YES
+Question: Does it live in the water?
+Answer: YES
+Question: Does it have tusks?
+Answer: NO
+Question: Is it a seal?
+Answer: Yes! That's correct.
+
+====================
+Target: missile
+Question: Is it alive?
+Answer: NO.
+Question: Is it a weapon?
+Answer: YES.
+Question: Is it typically thrown?
+Answer: NO.
+Question: Is it typically fired from a gun?
+Answer: NO.
+Question: Is it something that explodes?
+Answer: YES.
+Question: Is it a bomb?
+Answer: NO.
+Question: Is it a missile?
+Answer: Yes! That's correct.
+
+====================
+Target: spear
+Question: Is it an animal?
+Answer: NO
+Question: Is it a weapon?
+Answer: YES
+Question: Can it be used in close combat?
+Answer: YES
+Question: Is it typically thrown?
+Answer: YES
+Question: Is it a spear?
+Answer: Yes! That's correct.
+
+====================
+Target: stick
+Question: Is it an animal?
+Answer: NO
+Question: Can it be used as a weapon?
+Answer: YES
+Question: Is it typically longer than it is wide?
+Answer: YES
+Question: Is it made of wood?
+Answer: YES
+Question: Is it a stick?
+Answer: Yes! That's correct.
+
+====================
+Target: caribou
+Question: Is it an animal?
+Answer: YES
+Question: Is it bigger than a house cat?
+Answer: YES
+Question: Does it have tusks?
+Answer: NO
+Question: Does it have spines or quills?
+Answer: NO
+Question: Does it live in the wild?
+Answer: YES
+Question: Is it typically found in North America?
+Answer: YES
+Question: Is it a caribou?
+Answer: Yes! That's correct.
+
+====================
+Target: zebra
+Question: Is it an animal?
+Answer: YES
+Question: Is it a land animal?
+Answer: YES
+Question: Does it have stripes?
+Answer: YES
+Question: Is it a zebra?
+Answer: Yes! That's correct.
+
+====================
+Target: cow
+Question: Is it a fruit?
+Answer: NO
+Question: Is it an animal?
+Answer: YES
+Question: Is it a land animal?
+Answer: YES
+Question: Does it have antlers?
+Answer: NO
+Question: Is it a farm animal?
+Answer: YES
+Question: Does it have hooves?
+Answer: YES
+Question: Is it a cow?
+Answer: Yes! That's correct.
+
+====================
+Target: avocado
+Question: Is the target an animal?
+Answer: No.
+Question: Is it a fruit?
+Answer: Yes! That's correct.
+
+====================
+Target: cherry
+Question: Is it an animal?
+Answer: NO
+Question: Is it a citrus fruit?
+Answer: NO
+Question: Is it a fruit that grows on a tree?
+Answer: YES
+Question: Does it have a large seed in the middle?
+Answer: YES
+Question: Is it a cherry?
+Answer: Yes! That's correct.
+
+====================
+Target: tomato
+Question: Is it an animal?
+Answer: NO
+Question: Is it a fruit?
+Answer: YES
+Question: Does it grow on a tree?
+Answer: NO
+Question: Is it red?
+Answer: YES
+Question: Is it a cranberry?
+Answer: NO
+Question: Is it a tomato?
+Answer: Yes! That's correct.
+
+====================
+Target: mink
+ 28%|██▊       | 25/90 [02:59<06:30,  6.01s/it] 29%|██▉       | 26/90 [03:05<06:38,  6.22s/it] 30%|███       | 27/90 [03:11<06:22,  6.08s/it] 31%|███       | 28/90 [03:17<06:21,  6.15s/it] 32%|███▏      | 29/90 [03:27<07:22,  7.25s/it] 33%|███▎      | 30/90 [03:34<07:00,  7.01s/it] 34%|███▍      | 31/90 [03:38<06:11,  6.29s/it] 36%|███▌      | 32/90 [03:48<07:06,  7.35s/it] 37%|███▋      | 33/90 [03:56<07:03,  7.42s/it] 38%|███▊      | 34/90 [04:05<07:18,  7.84s/it] 39%|███▉      | 35/90 [04:11<06:55,  7.56s/it] 40%|████      | 36/90 [04:18<06:25,  7.13s/it] 41%|████      | 37/90 [04:22<05:31,  6.25s/it] 42%|████▏     | 38/90 [04:26<04:55,  5.69s/it] 43%|████▎     | 39/90 [04:32<04:55,  5.79s/it] 44%|████▍     | 40/90 [04:42<05:53,  7.08s/it] 46%|████▌     | 41/90 [04:49<05:36,  6.86s/it] 47%|████▋     | 42/90 [04:56<05:35,  6.98s/it] 48%|████▊     | 43/90 [05:01<05:06,  6.53s/it] 49%|████▉     | 44/90 [05:09<05:18,  6.93s/it] 50%|█████     | 45/90 [05:18<05:34,  7.43s/it] 51%|█████     | 46/90 [05:21<04:35,  6.27s/it] 52%|█████▏    | 47/90 [05:31<05:08,  7.18s/it] 53%|█████▎    | 48/90 [05:40<05:25,  7.75s/it] 54%|█████▍    | 49/90 [05:52<06:15,  9.16s/it]Question: Is it an animal?
+Answer: YES
+Question: Does it live in the ocean?
+Answer: NO
+Question: Is it typically kept as livestock?
+Answer: NO
+Question: Is it a rodent?
+Answer: NO
+Question: Is it known for its fur?
+Answer: YES
+Question: Is it a mink?
+Answer: Yes! That's correct.
+
+====================
+Target: gorilla
+Question: Is it an animal?
+Answer: YES
+Question: Does it live in the ocean?
+Answer: NO
+Question: Is it covered in fur?
+Answer: YES
+Question: Is it typically white?
+Answer: NO
+Question: Is it a primate?
+Answer: YES
+Question: Is it a gorilla?
+Answer: Yes! That's correct.
+
+====================
+Target: elk
+Question: Is it an animal?
+Answer: YES
+Question: Is it a carnivore?
+Answer: NO
+Question: Is it a large animal?
+Answer: YES
+Question: Does it have antlers?
+Answer: YES
+Question: Is it an elk?
+Answer: Yes! That's correct.
+
+====================
+Target: pumpkin
+Question: Is it an animal?
+Answer: NO
+Question: Is it a plant?
+Answer: YES
+Question: Is it a fruit?
+Answer: YES
+Question: Is it orange?
+Answer: YES
+Question: Is it a pumpkin?
+Answer: Yes! That's correct.
+
+====================
+Target: beans
+Question: Is it an animal?
+Answer: NO
+Question: Is it a root vegetable?
+Answer: NO
+Question: Is it a vegetable that grows underground?
+Answer: NO
+Question: Does it grow above ground?
+Answer: YES
+Question: Is it green?
+Answer: YES
+Question: Is it a leafy green?
+Answer: NO
+Question: Does it grow in a pod?
+Answer: YES
+Question: Is it beans?
+Answer: Yes! That's correct.
+
+====================
+Target: potato
+Question: Is it an animal?
+Answer: NO
+Question: Does it grow underground?
+Answer: YES
+Question: Is it a vegetable commonly used in cooking?
+Answer: YES
+Question: Is it an orange color?
+Answer: NO
+Question: Is it a potato?
+Answer: Yes! That's correct.
+
+====================
+Target: penguin
+Question: Is it an article of clothing?
+Answer: NO
+Question: Is it a type of bird?
+Answer: YES
+Question: Can this bird fly?
+Answer: NO
+Question: Is it a penguin?
+Answer: Yes! That's correct.
+
+====================
+Target: stork
+Question: Is it an article of clothing?
+Answer: NO
+Question: Is it a bird?
+Answer: YES
+Question: Does it live in the wild?
+Answer: YES
+Question: Can it fly?
+Answer: YES
+Question: Is it typically found in North America?
+Answer: NO
+Question: Is it a wading bird?
+Answer: YES
+Question: Is it a stork?
+Answer: Yes! That's correct.
+
+====================
+Target: hawk
+Question: Is the target an animal?
+Answer: YES
+Question: Can the animal fly?
+Answer: YES
+Question: Is the animal typically kept as a pet?
+Answer: NO
+Question: Is the animal a bird of prey?
+Answer: YES
+Question: Is it a falcon?
+Answer: NO
+Question: Is it a hawk?
+Answer: Yes! That's correct.
+
+====================
+Target: bra
+Question: Is the target an animal?
+Answer: NO
+Question: Is it something you wear on your feet?
+Answer: NO
+Question: Is it an item of clothing?
+Answer: YES
+Question: Is it typically worn on the lower half of the body?
+Answer: NO
+Question: Is it something worn on the upper body?
+Answer: YES
+Question: Is it typically worn by women?
+Answer: YES
+Question: Is it a bra?
+Answer: Yes! That's correct.
+
+====================
+Target: belt
+Question: Is it an animal?
+Answer: NO
+Question: Is it something you wear?
+Answer: YES
+Question: Is it something you wear to bed?
+Answer: NO
+Question: Is it something you wear on your feet?
+Answer: NO
+Question: Is it typically worn around the neck?
+Answer: NO
+Question: Is it worn around the waist?
+Answer: YES
+Question: Is it a belt?
+Answer: Yes! That's correct.
+
+====================
+Target: bra
+Question: Is it alive?
+Answer: NO
+Question: Is it worn on the upper body?
+Answer: YES
+Question: Is it typically worn by men?
+Answer: NO
+Question: Is it a type of jewelry?
+Answer: NO
+Question: Is it typically worn as an undergarment?
+Answer: YES
+Question: Is it a bra?
+Answer: Yes! That's correct.
+
+====================
+Target: penguin
+Question: Is the target animal?
+Answer: YES
+Question: Does it fly?
+Answer: NO
+Question: Is it a water bird?
+Answer: YES
+Question: Is it a penguin?
+Answer: Yes! That's correct.
+
+====================
+Target: penguin
+Question: Is it an animal?
+Answer: YES
+Question: Can it fly?
+Answer: NO
+Question: Does it live in the water?
+Answer: YES
+Question: Is it a penguin?
+Answer: Yes! That's correct.
+
+====================
+Target: seagull
+Question: Is it an animal?
+Answer: YES
+Question: Can it fly?
+Answer: YES
+Question: Is it a type of raptor?
+Answer: NO
+Question: Is it a large bird?
+Answer: NO
+Question: Is it a sea bird?
+Answer: YES
+Question: Is it a seagull?
+Answer: Yes! That's correct.
+
+====================
+Target: whip
+Question: Is it an animal?
+Answer: No.
+Question: Is it a weapon?
+Answer: Yes.
+Question: Does it shoot projectiles?
+Answer: No.
+Question: Is it a long-range weapon?
+Answer: No.
+Question: Is it a melee weapon?
+Answer: Yes.
+Question: Is it made primarily of wood?
+Answer: No.
+Question: Is it used for striking?
+Answer: Yes.
+Question: Is it a stick?
+Answer: No.
+Question: Is it a whip?
+Answer: Yes! That's correct.
+
+====================
+Target: bomb
+Question: Is it an animal?
+Answer: NO
+Question: Is it a weapon?
+Answer: YES
+Question: Was it used in ancient times?
+Answer: NO
+Question: Is it typically thrown by hand?
+Answer: YES
+Question: Is it a grenade?
+Answer: NO
+Question: Is it a bomb?
+Answer: Yes! That's correct.
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: . 64%|██████▍   | 58/90 [06:45<03:11,  5.99s/it] 66%|██████▌   | 59/90 [06:52<03:10,  6.14s/it] 67%|██████▋   | 60/90 [07:02<03:38,  7.27s/it] 68%|██████▊   | 61/90 [07:10<03:39,  7.55s/it] 69%|██████▉   | 62/90 [07:17<03:27,  7.42s/it] 70%|███████   | 63/90 [07:23<03:07,  6.96s/it] 71%|███████   | 64/90 [07:29<02:54,  6.70s/it] 72%|███████▏  | 65/90 [07:36<02:46,  6.68s/it] 73%|███████▎  | 66/90 [07:41<02:31,  6.31s/it] 74%|███████▍  | 67/90 [07:50<02:44,  7.17s/it] 76%|███████▌  | 68/90 [07:56<02:27,  6.69s/it] 77%|███████▋  | 69/90 [08:05<02:38,  7.54s/it] 78%|███████▊  | 70/90 [08:13<02:32,  7.64s/it] 79%|███████▉  | 71/90 [08:21<02:27,  7.79s/it] 80%|████████  | 72/90 [08:24<01:50,  6.11s/it] 81%|████████  | 73/90 [08:30<01:46,  6.29s/it] 82%|████████▏ | 74/90 [08:38<01:47,  6.69s/it] 83%|████████▎ | 75/90 [08:45<01:44,  6.94s/it]Yes! That's correct.
+
+====================
+Target: parakeet
+Question: Okay, I understand! The target is one of those items.
+
+Is it alive?
+Answer: YES
+Question: Okay, it's alive!
+
+Does it have feathers?
+Answer: YES
+Question: Excellent! It's alive and has feathers.
+
+Can it fly?
+Answer: YES
+Question: Okay, it's an alive, feathered creature that can fly!
+
+Is it typically a pet?
+Answer: YES
+Question: Okay, it's an alive, feathered, flying creature, typically kept as a pet.
+
+Is it a parakeet?
+Answer: Yes! That's correct.
+
+====================
+Target: potato
+Question: Is it an animal?
+Answer: NO
+Question: Is it a vegetable?
+Answer: YES
+Question: Can you eat it raw?
+Answer: NO
+Question: Is it round?
+Answer: YES
+Question: Is it a potato?
+Answer: Yes! That's correct.
+
+====================
+Target: corn
+Question: Is it an animal?
+Answer: No.
+Question: Is it a vegetable?
+Answer: Yes! That's correct.
+
+====================
+Target: avocado
+Question: Is it an animal?
+Answer: NO
+Question: Is it a fruit?
+Answer: YES
+Question: Is it green?
+Answer: YES
+Question: Is it an avocado?
+Answer: Yes! That's correct.
+
+====================
+Target: cape
+Question: Is it something you wear?
+Answer: YES
+Question: Is it typically worn by women?
+Answer: NO
+Question: Is it an outer garment?
+Answer: YES
+Question: Does it typically have sleeves?
+Answer: NO
+Question: Is it a cape?
+Answer: Yes! That's correct.
+
+====================
+Target: cape
+Question: Is it an item of clothing?
+Answer: YES
+Question: Is it something you wear on your feet?
+Answer: NO
+Question: Is it something you wear on your legs?
+Answer: NO
+Question: Is it something you wear on your back or shoulders?
+Answer: YES
+Question: Is it a cape?
+Answer: Yes! That's correct.
+
+====================
+Target: trousers
+Question: Is it a weapon?
+Answer: NO
+Question: Is it an item of clothing?
+Answer: YES
+Question: Is it typically worn by women?
+Answer: NO
+Question: Is it a type of outerwear?
+Answer: NO
+Question: Does it cover the legs?
+Answer: YES
+Question: Is it trousers?
+Answer: Yes! That's correct.
+
+====================
+Target: grenade
+Question: Is the item of clothing?
+Answer: NO
+Question: Is it a weapon?
+Answer: YES
+Question: Can it be thrown?
+Answer: YES
+Question: Is it a grenade?
+Answer: Yes! That's correct.
+
+====================
+Target: spear
+Question: Is it a weapon?
+Answer: YES
+Question: Can it be held in one hand?
+Answer: YES
+Question: Is it usually made of wood?
+Answer: YES
+Question: Is it usually longer than 3 feet?
+Answer: YES
+Question: Is it a spear?
+Answer: Yes! That's correct.
+
+====================
+Target: missile
+Question: Is it a type of clothing?
+Answer: NO
+Question: Is it something that can be used as a weapon?
+Answer: YES
+Question: Is it typically launched from a device or platform?
+Answer: YES
+Question: Can it travel through the air?
+Answer: YES
+Question: Is it self-propelled?
+Answer: YES
+Question: Does it typically contain explosives?
+Answer: YES
+Question: Is it designed to hit a specific target?
+Answer: YES
+Question: Is it typically associated with military use?
+Answer: YES
+Question: Is it a missile?
+Answer: Yes! That's correct.
+
+====================
+Target: swimsuit
+Question: Is the item of clothing?
+Answer: YES
+Question: Is it typically worn in cold weather?
+Answer: NO
+Question: Does it have sleeves?
+Answer: NO
+Question: Is it worn on the upper body?
+Answer: YES
+Question: Is it worn by women?
+Answer: YES
+Question: Is it typically worn while swimming?
+Answer: YES
+Question: Is it the swimsuit?
+Answer: Yes! That's correct.
+
+====================
+Target: trousers
+Question: Is it a plant?
+Answer: No.
+Question: Is it an article of clothing?
+Answer: Yes.
+Question: Is it plural?
+Answer: Yes.
+Questi../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: ../data/generation/gemini/8_mcrae/dialogues.txt
+Error: name 'tqmd' is not defined
+Retrying in 5 seconds...
+Saving to: 

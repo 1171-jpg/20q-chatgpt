@@ -1,0 +1,1274 @@
+====================
+target = fox
+candidates = ['elk', 'chicken', 'robin', 'starling', 'fox', 'partridge', 'hamster', 'buffalo']
+questioner: Great! Is the target an animal that is commonly found in the wild?
+answerer: YES
+questioner: Is the target a bird?
+answerer: NO
+questioner: Is the target a mammal?
+answerer: YES
+questioner: Is the target typically kept as a pet?
+answerer: NO
+questioner: Is the target an animal that is commonly found in the wild in North America?
+answerer: YES
+questioner: Is the target larger than a fox?
+answerer: NO
+questioner: Is the target a fox?
+answerer: Yes! That's correct.
+====================
+target = fawn
+candidates = ['budgie', 'zebra', 'deer', 'penguin', 'pelican', 'sheep', 'fawn', 'ostrich']
+questioner: Is the target animal a bird?
+answerer: NO
+questioner: Is the target animal a type of mammal?
+answerer: YES
+questioner: Is the target animal a wild animal rather than a domesticated one?
+answerer: YES
+questioner: Is the target animal generally found in forest or woodland habitats?
+answerer: YES
+questioner: Is the target animal a young or juvenile form of another animal?
+answerer: YES
+questioner: Is the target animal a fawn?
+answerer: Yes! That's correct.
+====================
+target = zebra
+candidates = ['pelican', 'bear', 'zebra', 'walrus', 'vulture', 'chickadee', 'finch', 'otter']
+questioner: Is the target animal a bird?
+answerer: NO
+questioner: Is the target animal a mammal?
+answerer: YES
+questioner: Is the target animal typically found in aquatic environments?
+answerer: NO
+questioner: Is the target animal known for having stripes?
+answerer: YES
+questioner: Is the target animal a zebra?
+answerer: Yes! That's correct.
+====================
+target = rooster
+candidates = ['peacock', 'platypus', 'budgie', 'pig', 'turkey', 'beaver', 'deer', 'rooster']
+questioner: Great! Let's start.
+
+Is the target animal a bird?
+answerer: YES.
+questioner: Is the bird commonly kept as a pet?
+answerer: NO.
+questioner: Is the bird larger than a crow?
+answerer: YES.
+questioner: Is the bird known for its distinctive fan-shaped tail?
+answerer: NO.
+questioner: Is the bird commonly associated with being raised for food?
+answerer: YES.
+questioner: Is the bird a turkey?
+answerer: NO.
+questioner: Is the bird a rooster?
+answerer: Yes! That's correct.
+====================
+target = owl
+candidates = ['falcon', 'eagle', 'fawn', 'owl', 'platypus', 'beaver', 'pigeon', 'chimp']
+questioner: Is the target animal a bird?
+answerer: Yes.
+questioner: Is the target animal a bird of prey (hunts other animals for food)?
+answerer: Yes.
+questioner: Is the target bird primarily active during the night (nocturnal)?
+answerer: Yes.
+questioner: Is the target animal an owl?
+answerer: Yes! That's correct.
+====================
+target = falcon
+candidates = ['fawn', 'hamster', 'falcon', 'cheetah', 'peacock', 'owl', 'parakeet', 'giraffe']
+questioner: Is your target an animal that primarily lives on land?
+answerer: NO
+questioner: Is your target an animal that primarily lives in the air?
+answerer: YES
+questioner: Is your target a bird?
+answerer: YES
+questioner: Is your target a bird of prey (such as a falcon or owl)?
+answerer: YES
+questioner: Is your target a falcon?
+answerer: Yes! That's correct.
+====================
+target = hamster
+candidates = ['chipmunk', 'leotards', 'mittens', 'bear', 'hamster', 'boots', 'gown', 'zebra']
+questioner: Is the target a living animal?
+answerer: YES
+questioner: Is the target a type of rodent?
+answerer: YES
+questioner: Is the target commonly kept as a pet?
+answerer: YES
+questioner: Is the target smaller than a typical house cat?
+answerer: YES
+questioner: Is the target a hamster?
+answerer: Yes! That's correct.
+====================
+target = dolphin
+candidates = ['dolphin', 'trousers', 'shoes', 'cougar', 'beaver', 'bra', 'ox', 'pants']
+questioner: Is the target a living animal?
+answerer: Yes.
+questioner: Is the target a mammal?
+answerer: Yes.
+questioner: Is the target commonly found in the wild rather than being domesticated?
+answerer: Yes.
+questioner: Is the target an animal that primarily lives in water?
+answerer: Yes.
+questioner: Is the target a dolphin?
+answerer: Yes! That's correct.
+====================
+target = deer
+candidates = ['shoes', 'fawn', 'deer', 'belt', 'gorilla', 'bra', 'elephant', 'tie']
+questioner: Is the target a living animal?
+answerer: YES
+questioner: Is the target larger than a human?
+answerer: NO
+questioner: Does the target have hooves?
+answerer: YES
+questioner: Is the target a young animal?
+answerer: NO
+questioner: Is the target a deer?
+answerer: Yes! That's correct.
+====================
+target = boots
+candidates = ['boots', 'fawn', 'seal', 'cape', 'otter', 'swimsuit', 'porcupine', 'trousers']
+questioner: Is the target a type of animal?
+answerer: No.
+questioner: Is the target an item of clothing?
+answerer: Yes.
+questioner: Is the target typically worn on the upper body?
+answerer: No.
+questioner: Is the target typically worn on the legs?
+answerer: No.
+questioner: Is the target typically worn on the feet?
+answerer: Yes.
+questioner: Is the target boots?
+answerer: Yes! That's correct.
+====================
+target = tie
+candidates = ['cougar', 'belt', 'otter', 'tie', 'scarf', 'seal', 'pig', 'blouse']
+questioner: Great! Is the target a living animal?
+answerer: No.
+questioner: Is the target an item of clothing?
+answerer: Yes.
+questioner: Is the target worn around the neck?
+answerer: Yes.
+questioner: Is the target typically made of fabric?
+answerer: Yes.
+questioner: Is the target an accessory primarily used for warmth?
+answerer: No.
+questioner: Is the target typically used in formal or professional settings?
+answerer: Yes.
+questioner: Is the target a tie?
+answerer: Yes! That's correct.
+====================
+target = belt
+candidates = ['walrus', 'chimp', 'belt', 'donkey', 'platypus', 'pajamas', 'tie', 'blouse']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target an article of clothing?
+answerer: YES
+questioner: Is the target typically worn on the upper part of the body?
+answerer: NO
+questioner: Is the target generally worn around the waist?
+answerer: YES
+questioner: Is the target a belt?
+answerer: Yes! That's correct.
+====================
+target = seal
+candidates = ['shotgun', 'seal', 'hamster', 'chipmunk', 'deer', 'spear', 'rocket', 'tomahawk']
+questioner: Is the target a living animal?
+answerer: YES
+questioner: Is the target a mammal?
+answerer: YES
+questioner: Is the target a small mammal that could be kept as a pet?
+answerer: NO
+questioner: Does the target live in the wild and is generally larger than a rabbit?
+answerer: YES
+questioner: Is the target a deer?
+answerer: NO
+questioner: Is the target an animal that primarily lives in or near water?
+answerer: YES
+questioner: Is the target a seal?
+answerer: Yes! That's correct.
+====================
+target = bear
+candidates = ['goat', 'bear', 'squirrel', 'grenade', 'whip', 'zebra', 'crowbar', 'rocket']
+questioner: Great! I will start by asking:
+
+Is it an animal?
+answerer: YES
+questioner: Is it a mammal?
+answerer: YES
+questioner: Is it smaller than a breadbox? (For reference, a breadbox is about the size of a large shoebox)
+answerer: NO
+questioner: Is it a herbivore?
+answerer: NO
+questioner: Is it a bear?
+answerer: Yes! That's correct.
+====================
+target = seal
+candidates = ['goat', 'tomahawk', 'sword', 'seal', 'walrus', 'missile', 'cougar', 'revolver']
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a marine animal?
+answerer: YES
+questioner: Is the target a type of seal?
+answerer: YES
+questioner: Is the target a walrus?
+answerer: NO
+questioner: Is the target a seal (not a walrus)?
+answerer: Yes! That's correct.
+====================
+target = missile
+candidates = ['deer', 'missile', 'stick', 'buffalo', 'sheep', 'shotgun', 'bomb', 'cow']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target a man-made object?
+answerer: YES
+questioner: Is the target used as a weapon?
+answerer: YES
+questioner: Is the target an explosive device?
+answerer: YES
+questioner: Is the target a bomb?
+answerer: NO
+questioner: Is the target a missile?
+answerer: Yes! That's correct.
+====================
+target = spear
+candidates = ['goat', 'spear', 'deer', 'pistol', 'gorilla', 'lion', 'dagger', 'shotgun']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target a type of weapon?
+answerer: Yes
+questioner: Is the target a firearm?
+answerer: No
+questioner: Is the target a melee weapon (used in close combat)?
+answerer: Yes
+questioner: Is the target a dagger?
+answerer: No
+questioner: Is the target a spear?
+answerer: Yes! That's correct.
+====================
+target = stick
+candidates = ['harpoon', 'stick', 'buffalo', 'cow', 'walrus', 'whip', 'seal', 'knife']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target an object used as a tool or weapon?
+answerer: YES
+questioner: Is the target primarily made of metal?
+answerer: NO
+questioner: Is the target made primarily of wood?
+answerer: YES
+questioner: Is the target typically used for hitting or striking?
+answerer: YES
+questioner: Is the target a stick?
+answerer: Yes! That's correct.
+====================
+target = caribou
+candidates = ['hamster', 'pumpkin', 'porcupine', 'strawberry', 'grapefruit', 'elephant', 'caribou', 'plum']
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a small animal (generally smaller than a cat)?
+answerer: NO
+questioner: Is the target an animal that lives primarily on land?
+answerer: YES
+questioner: Is the animal a type of deer or related to deer? (Specifically asking if it is a caribou)
+answerer: YES. That's correct.
+====================
+target = zebra
+candidates = ['whale', 'honeydew', 'banana', 'sheep', 'zebra', 'cranberry', 'otter', 'tangerine']
+questioner: Is the target a living animal?
+answerer: Yes.
+questioner: Is the target a marine animal?
+answerer: No.
+questioner: Is the target a mammal?
+answerer: Yes.
+questioner: Is the target an animal commonly found on a farm?
+answerer: No.
+questioner: Is the target an animal typically found in the wild in Africa?
+answerer: Yes.
+questioner: Is the target a herbivore?
+answerer: Yes.
+questioner: Is the target a zebra?
+answerer: Yes! That's correct.
+====================
+target = cow
+candidates = ['coconut', 'cherry', 'beaver', 'grapefruit', 'tomato', 'deer', 'seal', 'cow']
+questioner: Is the target a type of animal?
+answerer: YES
+questioner: Is the target an animal that lives primarily in water?
+answerer: NO
+questioner: Is the target an animal that is commonly found on farms?
+answerer: YES
+questioner: Is the target an animal that is kept primarily for milk production?
+answerer: YES
+questioner: Is the target a cow?
+answerer: Yes! That's correct.
+====================
+target = avocado
+candidates = ['avocado', 'cheetah', 'strawberry', 'fawn', 'pineapple', 'giraffe', 'deer', 'tangerine']
+questioner: Is the target a type of animal?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the fruit typically green on the outside?
+answerer: YES
+questioner: Is the fruit the avocado?
+answerer: Yes! That's correct.
+====================
+target = cherry
+candidates = ['apple', 'pear', 'beaver', 'cherry', 'cougar', 'platypus', 'elephant', 'grapefruit']
+questioner: Is the target an animal?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the target typically red in color?
+answerer: YES
+questioner: Is the target a cherry?
+answerer: Yes! That's correct.
+====================
+target = tomato
+candidates = ['tomato', 'giraffe', 'rhubarb', 'hamster', 'tangerine', 'mink', 'cranberry', 'cheetah']
+questioner: Is the target a plant?
+answerer: Yes.
+questioner: Is the target something commonly eaten as fruit?
+answerer: Yes.
+questioner: Is the target typically sweet rather than sour or tart?
+answerer: No.
+questioner: Is the target usually red in color?
+answerer: Yes.
+questioner: Is the target small and often used in sauces or jams?
+answerer: Yes.
+questioner: Is the target cranberry?
+answerer: No.
+questioner: Is the target tomato?
+answerer: Yes! That's correct.
+====================
+target = mink
+candidates = ['mink', 'mushroom', 'asparagus', 'cow', 'radish', 'whale', 'celery', 'squirrel']
+questioner: Is the target a living animal?
+answerer: YES
+questioner: Is the target a mammal?
+answerer: YES
+questioner: Is the target a wild animal rather than a farm animal?
+answerer: YES
+questioner: Is the target primarily found in forests?
+answerer: YES
+questioner: Is the target a small animal, typically smaller than a cat?
+answerer: YES
+questioner: Is the target a squirrel?
+answerer: NO
+questioner: Is the target a mink?
+answerer: Yes! That's correct.
+====================
+target = gorilla
+candidates = ['broccoli', 'walrus', 'gorilla', 'mushroom', 'potato', 'peas', 'sheep', 'dolphin']
+questioner: Is the target a plant?
+answerer: NO
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a marine animal?
+answerer: NO
+questioner: Is the target a land animal?
+answerer: YES
+questioner: Is the target a mammal?
+answerer: YES
+questioner: Is the target a wild animal?
+answerer: YES
+questioner: Is the target a gorilla?
+answerer: Yes! That's correct.
+====================
+target = elk
+candidates = ['otter', 'seal', 'celery', 'asparagus', 'tomato', 'elk', 'lion', 'pumpkin']
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a marine animal?
+answerer: NO
+questioner: Is the target a carnivore?
+answerer: NO
+questioner: Is the target a herbivore?
+answerer: YES
+questioner: Is the target a large land animal?
+answerer: YES
+questioner: Is the target an elk?
+answerer: Yes! That's correct.
+====================
+target = pumpkin
+candidates = ['gorilla', 'pumpkin', 'mushroom', 'cauliflower', 'fawn', 'peas', 'deer', 'cougar']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target a type of plant or vegetable?
+answerer: YES
+questioner: Is the target something that is commonly eaten as a vegetable?
+answerer: YES
+questioner: Is the target green in color?
+answerer: NO
+questioner: Is the target orange in color?
+answerer: YES
+questioner: Is the target a pumpkin?
+answerer: Yes! That's correct.
+====================
+target = beans
+candidates = ['radish', 'whale', 'beans', 'potato', 'bison', 'pig', 'beets', 'deer']
+questioner: Great! Let's start narrowing it down.
+
+Is the target an animal?
+answerer: NO
+questioner: Is the target a type of vegetable?
+answerer: NO
+questioner: Is the target a type of food that comes from an animal?
+answerer: NO
+questioner: Is the target a type of plant or seed?
+answerer: YES
+questioner: Is the target a type of bean?
+answerer: YES! That's correct.
+====================
+target = potato
+candidates = ['eggplant', 'onions', 'fawn', 'chimp', 'pumpkin', 'platypus', 'walrus', 'potato']
+questioner: Is the target a type of animal?
+answerer: NO
+questioner: Is the target a type of vegetable?
+answerer: YES
+questioner: Is the target typically purple in color?
+answerer: NO
+questioner: Is the target commonly used as a root vegetable?
+answerer: YES
+questioner: Is the target a potato?
+answerer: Yes! That's correct.
+====================
+target = penguin
+candidates = ['trousers', 'buzzard', 'cloak', 'bluejay', 'boots', 'vulture', 'penguin', 'sweater']
+questioner: Is the target a type of clothing?
+answerer: NO
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a bird that can fly?
+answerer: NO
+questioner: Is the target a flightless bird?
+answerer: YES
+questioner: Is the target the penguin?
+answerer: Yes! That's correct.
+====================
+target = stork
+candidates = ['tie', 'bra', 'eagle', 'parakeet', 'woodpecker', 'stork', 'belt', 'camisole']
+questioner: Is the target an item of clothing?
+answerer: NO
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a bird?
+answerer: YES
+questioner: Is the target a bird of prey?
+answerer: NO
+questioner: Is the target a colorful bird?
+answerer: NO
+questioner: Is the bird known for pecking at wood?
+answerer: NO
+questioner: Is the bird typically associated with wetlands or water habitats?
+answerer: YES
+questioner: Is the target a stork?
+answerer: Yes! That's correct.
+====================
+target = hawk
+candidates = ['hawk', 'peacock', 'falcon', 'tie', 'belt', 'budgie', 'bra', 'shoes']
+questioner: Is the target a type of bird?
+answerer: YES
+questioner: Is the bird a commonly kept pet?
+answerer: NO
+questioner: Is the bird a bird of prey (a hunter bird like a hawk or falcon)?
+answerer: YES
+questioner: Is the bird smaller than a hawk?
+answerer: NO
+questioner: Is the bird known for its speed and hunting ability, often used in falconry?
+answerer: YES
+questioner: Is the target a falcon?
+answerer: NO
+questioner: Is the target a hawk?
+answerer: Yes! That's correct.
+====================
+target = bra
+candidates = ['chickadee', 'skirt', 'eagle', 'leotards', 'bra', 'boots', 'owl', 'raven']
+questioner: Is the target something that is worn?
+answerer: YES
+questioner: Is the target an item of clothing typically worn on the upper body?
+answerer: YES
+questioner: Is the target typically worn as underwear?
+answerer: YES
+questioner: Is the target a bra?
+answerer: Yes! That's correct.
+====================
+target = belt
+candidates = ['rooster', 'belt', 'pajamas', 'slippers', 'woodpecker', 'parakeet', 'partridge', 'tie']
+questioner: Is the target a living thing?
+answerer: NO
+questioner: Is the target an item of clothing?
+answerer: YES
+questioner: Is the target typically worn on the upper body?
+answerer: NO
+questioner: Is the target typically worn on the lower body?
+answerer: YES
+questioner: Is the target worn on the feet?
+answerer: NO
+questioner: Is the target worn around the waist?
+answerer: YES
+questioner: Is the target a belt?
+answerer: Yes! That's correct.
+====================
+target = bra
+candidates = ['penguin', 'shoes', 'goose', 'tie', 'peacock', 'belt', 'oriole', 'bra']
+questioner: Is the target something that is an animal?
+answerer: NO
+questioner: Is the target something that is worn as an accessory?
+answerer: NO
+questioner: Is the target an item of clothing?
+answerer: YES
+questioner: Is the target primarily worn on the upper body?
+answerer: YES
+questioner: Is the target typically worn around the neck?
+answerer: NO
+questioner: Is the target typically worn as an undergarment?
+answerer: YES
+questioner: Is the target a bra?
+answerer: Yes! That's correct.
+====================
+target = penguin
+candidates = ['rocket', 'duck', 'rooster', 'penguin', 'catapult', 'spear', 'cannon', 'budgie']
+questioner: Is the target a living creature?
+answerer: YES
+questioner: Is the target a bird?
+answerer: YES
+questioner: Is the target a bird that typically lives in cold climates?
+answerer: YES
+questioner: Is the target a penguin?
+answerer: Yes! That's correct.
+====================
+target = penguin
+candidates = ['shotgun', 'starling', 'pelican', 'rifle', 'penguin', 'stone', 'rocket', 'ostrich']
+questioner: Is the target a living creature?
+answerer: Yes.
+questioner: Is the target a bird?
+answerer: Yes.
+questioner: Is the target a flightless bird?
+answerer: Yes.
+questioner: Is the target larger than a human?
+answerer: No.
+questioner: Does the bird live primarily in cold regions?
+answerer: Yes.
+questioner: Is the target a penguin?
+answerer: Yes! That's correct.
+====================
+target = seagull
+candidates = ['crowbar', 'stork', 'knife', 'chickadee', 'stick', 'owl', 'seagull', 'axe']
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a bird that is commonly found near water?
+answerer: YES
+questioner: Is the bird typically known for its long legs and neck?
+answerer: NO
+questioner: Is the bird known for its distinctive call often heard near the sea or lakes?
+answerer: YES
+questioner: Is the target bird a seagull?
+answerer: Yes! That's correct.
+====================
+target = whip
+candidates = ['whip', 'stick', 'budgie', 'rooster', 'catapult', 'pheasant', 'peacock', 'bazooka']
+questioner: Is the target a living animal?
+answerer: NO
+questioner: Is the target a man-made object?
+answerer: YES
+questioner: Is the target a weapon or a tool used for launching or striking?
+answerer: YES
+questioner: Is the target a handheld weapon?
+answerer: YES
+questioner: Is the target used mainly for long-range attacks?
+answerer: NO
+questioner: Is the target typically made of wood?
+answerer: NO
+questioner: Is the target a mechanical weapon, such as a bazooka?
+answerer: NO
+questioner: Is the target a flexible weapon or tool, such as a whip?
+answerer: YES! That's correct.
+====================
+target = bomb
+candidates = ['rifle', 'grenade', 'stone', 'turkey', 'flamingo', 'bomb', 'robin', 'penguin']
+questioner: Is the target a living thing?
+answerer: NO
+questioner: Is the target something that can be used as a weapon?
+answerer: YES
+questioner: Is the target an explosive device?
+answerer: YES
+questioner: Is the target a bomb?
+answerer: Yes! That's correct.
+====================
+target = stick
+candidates = ['penguin', 'whip', 'woodpecker', 'stick', 'sword', 'crow', 'tomahawk', 'pelican']
+questioner: Is the target a living creature?
+answerer: NO
+questioner: Is the target an object used as a tool or weapon?
+answerer: YES
+questioner: Is the target made primarily of wood?
+answerer: YES
+questioner: Is the target designed to be used as a weapon?
+answerer: YES
+questioner: Is the target a sword?
+answerer: NO
+questioner: Is the target a tomahawk?
+answerer: NO
+questioner: Is the target a whip?
+answerer: NO
+questioner: Is the target a stick?
+answerer: Yes! That's correct.
+====================
+target = budgie
+candidates = ['budgie', 'finch', 'grapefruit', 'cranberry', 'raisin', 'crow', 'pumpkin', 'raven']
+questioner: Great! To start narrowing down the list, is the target an animal?
+answerer: YES
+questioner: Is the target a bird?
+answerer: YES
+questioner: Is the bird in the target list typically small in size?
+answerer: YES
+questioner: Is the bird a type of pet or commonly kept as a pet?
+answerer: YES
+questioner: Is the target bird a budgie?
+answerer: Yes! That's correct.
+====================
+target = dove
+candidates = ['swan', 'apple', 'peach', 'buzzard', 'dove', 'lime', 'strawberry', 'robin']
+questioner: Is the target a living creature?
+answerer: Yes.
+questioner: Is the target a bird?
+answerer: Yes.
+questioner: Is the bird a small bird typically found in gardens or urban areas?
+answerer: Yes.
+questioner: Is the bird known for its bright red or reddish coloring?
+answerer: No.
+questioner: Is the bird typically white or light-colored?
+answerer: Yes.
+questioner: Is the bird a dove?
+answerer: Yes! That's correct.
+====================
+target = woodpecker
+candidates = ['pineapple', 'rhubarb', 'woodpecker', 'stork', 'swan', 'orange', 'canary', 'cherry']
+questioner: Is the target a type of fruit?
+answerer: NO
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the animal a bird?
+answerer: YES
+questioner: Is the bird typically found in urban areas?
+answerer: NO
+questioner: Is the bird known for a distinctive color, like bright yellow or white?
+answerer: NO
+questioner: Is the bird known for pecking at wood?
+answerer: YES
+questioner: Is the target a woodpecker?
+answerer: Yes! That's correct.
+====================
+target = rhubarb
+candidates = ['falcon', 'owl', 'rhubarb', 'goose', 'cherry', 'apple', 'rooster', 'grapefruit']
+questioner: Is the target a type of bird?
+answerer: No.
+questioner: Is the target a type of fruit?
+answerer: No.
+questioner: Is the target a type of plant or vegetable?
+answerer: Yes.
+questioner: Is the target a vegetable?
+answerer: Yes.
+questioner: Is the target rhubarb?
+answerer: Yes! That's correct.
+====================
+target = tangerine
+candidates = ['honeydew', 'avocado', 'duck', 'penguin', 'turkey', 'oriole', 'banana', 'tangerine']
+questioner: Is the target a fruit?
+answerer: YES
+questioner: Is the target typically green in color?
+answerer: NO
+questioner: Is the target citrus fruit?
+answerer: YES
+questioner: Is the target a tangerine?
+answerer: Yes! That's correct.
+====================
+target = nectarine
+candidates = ['rhubarb', 'peacock', 'budgie', 'nectarine', 'prune', 'falcon', 'hawk', 'tomato']
+questioner: Is the target a type of animal?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the target typically red or orange in color?
+answerer: YES
+questioner: Is the target commonly used in desserts or sweet dishes?
+answerer: YES
+questioner: Is the target a nectarine?
+answerer: Yes! That's correct.
+====================
+target = crow
+candidates = ['asparagus', 'chickadee', 'cucumber', 'starling', 'mushroom', 'buzzard', 'peas', 'crow']
+questioner: Great! Is the target something that is a plant?
+answerer: NO
+questioner: Is the target an animal?
+answerer: YES
+questioner: Is the target a bird?
+answerer: YES
+questioner: Is the target a bird that is commonly found in urban areas?
+answerer: YES
+questioner: Is the target a crow?
+answerer: Yes! That's correct.
+====================
+target = blackbird
+candidates = ['blackbird', 'budgie', 'buzzard', 'mushroom', 'potato', 'cauliflower', 'chicken', 'cucumber']
+questioner: Is the target a living animal?
+answerer: YES
+questioner: Is the target a bird?
+answerer: YES
+questioner: Is the target a small bird typically kept as a pet?
+answerer: NO
+questioner: Is the target a bird of prey?
+answerer: NO
+questioner: Is the target a common wild bird that is often seen in urban areas?
+answerer: YES
+questioner: Is the target a blackbird?
+answerer: Yes! That's correct.
+====================
+target = parakeet
+candidates = ['rooster', 'duck', 'pickle', 'parakeet', 'crow', 'cucumber', 'onions', 'beets']
+questioner: Is the target you are thinking of an animal?
+answerer: YES
+questioner: Is the target a type of bird?
+answerer: YES
+questioner: Is the target a type of domesticated bird commonly found on farms?
+answerer: NO
+questioner: Is the target a small bird rather than a large or medium-sized bird?
+answerer: YES
+questioner: Is the target a parakeet?
+answerer: Yes! That's correct.
+====================
+target = potato
+candidates = ['duck', 'mushroom', 'peas', 'pheasant', 'potato', 'emu', 'canary', 'onions']
+questioner: Great! I'll start with my first question:
+
+Is the target a type of animal?
+answerer: NO
+questioner: Is the target a type of vegetable?
+answerer: YES
+questioner: Is the target something that grows underground?
+answerer: YES
+questioner: Is the target a potato?
+answerer: Yes! That's correct.
+====================
+target = corn
+candidates = ['robin', 'peas', 'crow', 'peacock', 'tomato', 'parsley', 'corn', 'pelican']
+questioner: Are you thinking of a type of bird?
+answerer: NO
+questioner: Is it a type of plant or vegetable?
+answerer: YES
+questioner: Is it a type of vegetable that is commonly eaten cooked rather than raw?
+answerer: YES
+questioner: Is it a vegetable that typically grows underground?
+answerer: NO
+questioner: Is it a vegetable that produces edible seeds or pods?
+answerer: YES
+questioner: Is it a vegetable that is green in color?
+answerer: NO
+questioner: Is it a vegetable that is red in color?
+answerer: NO
+questioner: Is it corn?
+answerer: Yes! That's correct.
+====================
+target = avocado
+candidates = ['blackbird', 'owl', 'sparrow', 'avocado', 'pumpkin', 'onions', 'hawk', 'potato']
+questioner: Is the target a type of bird?
+answerer: NO
+questioner: Is the target a type of vegetable?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the target an avocado?
+answerer: Yes! That's correct.
+====================
+target = cape
+candidates = ['blouse', 'camisole', 'tomahawk', 'crowbar', 'gown', 'spear', 'harpoon', 'cape']
+questioner: Is the target related to clothing or apparel?
+answerer: YES
+questioner: Is the target typically worn on the upper body?
+answerer: YES
+questioner: Is the target an outer garment, like a cape?
+answerer: YES
+questioner: Is the target a cape?
+answerer: Yes! That's correct.
+====================
+target = cape
+candidates = ['bazooka', 'trousers', 'shield', 'whip', 'boots', 'crowbar', 'pants', 'cape']
+questioner: Is the target an item of clothing?
+answerer: YES
+questioner: Is the target usually worn on the lower body?
+answerer: NO
+questioner: Is the target usually worn on the upper body?
+answerer: YES
+questioner: Is the target a cape?
+answerer: Yes! That's correct.
+====================
+target = trousers
+candidates = ['trousers', 'tomahawk', 'bazooka', 'camisole', 'cloak', 'catapult', 'robe', 'bomb']
+questioner: Is the target an item of clothing?
+answerer: YES
+questioner: Is the target typically worn on the upper body?
+answerer: NO
+questioner: Is the target typically worn on the lower body?
+answerer: YES
+questioner: Is the target designed to cover the legs?
+answerer: YES
+questioner: Is the target trousers?
+answerer: Yes! That's correct.
+====================
+target = grenade
+candidates = ['axe', 'trousers', 'grenade', 'boots', 'pants', 'revolver', 'stone', 'cape']
+questioner: Is the target an item of clothing?
+answerer: NO
+questioner: Is the target a weapon?
+answerer: YES
+questioner: Is the target a handheld weapon?
+answerer: YES
+questioner: Is the target a firearm?
+answerer: NO
+questioner: Is the target an axe?
+answerer: NO
+questioner: Is the target a grenade?
+answerer: Yes! That's correct.
+====================
+target = spear
+candidates = ['pants', 'robe', 'trousers', 'stick', 'spear', 'camisole', 'catapult', 'cannon']
+questioner: Great! Let's start.
+
+Is the object you're thinking of a piece of clothing?
+answerer: NO
+questioner: Is the object you're thinking of used as a weapon?
+answerer: YES
+questioner: Is the weapon a projectile weapon (one that launches or throws something)?
+answerer: YES
+questioner: Is the object a large weapon typically used in warfare, such as a cannon?
+answerer: NO
+questioner: Is the object a handheld weapon that is used to throw or launch objects, such as a catapult?
+answerer: NO
+questioner: Is the object a long, pointed weapon used for thrusting, such as a spear?
+answerer: YES
+
+Yes! That's correct.
+====================
+target = missile
+candidates = ['bra', 'belt', 'bomb', 'tie', 'missile', 'rocket', 'shoes', 'stone']
+questioner: Is the target related to clothing or accessories?
+answerer: NO
+questioner: Is the target an object that can be used as a weapon?
+answerer: YES
+questioner: Is the target an explosive device?
+answerer: YES
+questioner: Is the target a bomb?
+answerer: NO
+questioner: Is the target a missile?
+answerer: Yes! That's correct.
+====================
+target = swimsuit
+candidates = ['cloak', 'raisin', 'jacket', 'pumpkin', 'cape', 'swimsuit', 'prune', 'grapefruit']
+questioner: Great! Let's start narrowing it down.
+
+Is the target something primarily used as clothing?
+answerer: YES
+questioner: Is the target an outerwear item typically worn over other clothes (like a jacket, cloak, or cape)?
+answerer: NO
+questioner: Is the target typically worn while swimming or at the beach (like a swimsuit)?
+answerer: YES
+questioner: Is the target a one-piece swimsuit?
+answerer: NO
+questioner: Is the target specifically called a swimsuit (and not another clothing item)?
+answerer: YES
+questioner: Is the target a two-piece swimsuit (like a bikini)?
+answerer: YES
+
+Yes! That's correct.
+====================
+target = trousers
+candidates = ['camisole', 'pants', 'rhubarb', 'grapefruit', 'pajamas', 'trousers', 'pumpkin', 'tomato']
+questioner: Is the target a type of clothing?
+answerer: YES
+questioner: Is the target typically worn on the upper body?
+answerer: NO
+questioner: Is the target typically worn on the lower body?
+answerer: YES
+questioner: Is the target more commonly worn as casual wear or sleepwear?
+answerer: NO
+questioner: Is the target typically worn as outdoor clothing?
+answerer: YES
+questioner: Is the target pants?
+answerer: YES. That's correct.
+====================
+target = socks
+candidates = ['avocado', 'honeydew', 'bra', 'socks', 'cantaloupe', 'pear', 'cloak', 'coat']
+questioner: Is the target a type of fruit?
+answerer: NO
+questioner: Is the target an item of clothing?
+answerer: YES! That's correct.
+====================
+target = apple
+candidates = ['cranberry', 'pants', 'boots', 'apple', 'pumpkin', 'plum', 'trousers', 'bra']
+questioner: Is the target an item of clothing?
+answerer: No.
+questioner: Is the target a type of fruit?
+answerer: Yes! That's correct.
+====================
+target = cherry
+candidates = ['coconut', 'cherry', 'robe', 'scarf', 'peach', 'skirt', 'cranberry', 'shoes']
+questioner: Great! Is the target an object that you can wear?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the target typically small and red in color?
+answerer: YES
+questioner: Is the target a cherry?
+answerer: Yes! That's correct.
+====================
+target = coconut
+candidates = ['coconut', 'strawberry', 'belt', 'pear', 'tie', 'raisin', 'skirt', 'mittens']
+questioner: Is the target a type of fruit?
+answerer: YES
+questioner: Is the target typically small in size?
+answerer: NO
+questioner: Is the target a tropical fruit?
+answerer: YES
+questioner: Is the target a coconut?
+answerer: Yes! That's correct.
+====================
+target = socks
+candidates = ['mushroom', 'cloak', 'cucumber', 'blouse', 'socks', 'olive', 'zucchini', 'boots']
+questioner: Is the target a type of clothing?
+answerer: YES
+questioner: Is the target typically worn on the upper body?
+answerer: NO
+questioner: Is the target typically worn on the feet?
+answerer: YES
+questioner: Is the target boots?
+answerer: NO
+questioner: Is the target socks?
+answerer: Yes! That's correct.
+====================
+target = blouse
+candidates = ['zucchini', 'trousers', 'onions', 'potato', 'blouse', 'pants', 'slippers', 'rhubarb']
+questioner: Great! Is the target an edible item?
+answerer: NO.
+questioner: Is the target an item of clothing?
+answerer: YES.
+questioner: Is the target typically worn on the upper body?
+answerer: YES.
+questioner: Is the target a blouse?
+answerer: Yes! That's correct.
+====================
+target = swimsuit
+candidates = ['beans', 'pickle', 'swimsuit', 'beets', 'nightgown', 'shoes', 'mushroom', 'camisole']
+questioner: Is the target item something you typically wear?
+answerer: YES
+questioner: Is the target item primarily worn on the upper body?
+answerer: NO
+questioner: Is the target item primarily worn on the feet?
+answerer: NO
+questioner: Is the target item primarily worn in or around the water?
+answerer: YES
+questioner: Is the target item typically worn by women?
+answerer: YES
+questioner: Is the target item a swimsuit?
+answerer: Yes! That's correct.
+====================
+target = broccoli
+candidates = ['peas', 'mushroom', 'cloak', 'coat', 'scarf', 'boots', 'cucumber', 'broccoli']
+questioner: Is the target a type of plant?
+answerer: YES
+questioner: Is the target a vegetable that is commonly eaten raw in salads?
+answerer: NO
+questioner: Is the target something that grows underground?
+answerer: NO
+questioner: Is the target a type of fungus?
+answerer: NO
+questioner: Is the target a type of leafy green vegetable?
+answerer: NO
+questioner: Is the target a type of vegetable that is typically cooked before eating?
+answerer: YES
+questioner: Is the target broccoli?
+answerer: Yes! That's correct.
+====================
+target = onions
+candidates = ['olive', 'potato', 'leotards', 'onions', 'pumpkin', 'mittens', 'nightgown', 'camisole']
+questioner: Is the target item a type of clothing?
+answerer: NO
+questioner: Is the target item a type of food?
+answerer: YES
+questioner: Is the target item a vegetable?
+answerer: YES
+questioner: Is the target item typically orange in color?
+answerer: NO
+questioner: Is the target item commonly used in cooking and can be eaten raw?
+answerer: YES
+questioner: Is the target item an onion?
+answerer: Yes! That's correct.
+====================
+target = cauliflower
+candidates = ['shoes', 'peas', 'beans', 'tie', 'cauliflower', 'belt', 'bra', 'cabbage']
+questioner: Is the target something that is typically worn?
+answerer: NO
+questioner: Is the target something that is a type of food?
+answerer: YES
+questioner: Is the target a type of vegetable?
+answerer: YES
+questioner: Is the target green in color?
+answerer: NO
+questioner: Is the target white in color?
+answerer: YES
+questioner: Is the target cauliflower?
+answerer: Yes! That's correct.
+====================
+target = spear
+candidates = ['revolver', 'shotgun', 'raisin', 'grapefruit', 'stick', 'spear', 'pumpkin', 'prune']
+questioner: Is the target an object typically used as a tool or weapon?
+answerer: YES
+questioner: Is the target primarily made of wood?
+answerer: YES
+questioner: Is the target used primarily for hunting or fishing?
+answerer: YES
+questioner: Is the target a spear?
+answerer: Yes! That's correct.
+====================
+target = grenade
+candidates = ['olive', 'gun', 'raisin', 'grenade', 'cherry', 'rocket', 'plum', 'cannon']
+questioner: Is the target an object typically used as a weapon?
+answerer: Yes.
+questioner: Is the target an explosive device?
+answerer: Yes.
+questioner: Is the target a hand-thrown explosive device?
+answerer: Yes.
+questioner: Is the target a grenade?
+answerer: Yes! That's correct.
+====================
+target = bomb
+candidates = ['apple', 'rock', 'bomb', 'pumpkin', 'stone', 'grapefruit', 'crossbow', 'cherry']
+questioner: Is the target a living thing?
+answerer: No.
+questioner: Is the target something man-made?
+answerer: Yes.
+questioner: Is the target a weapon?
+answerer: Yes.
+questioner: Is the target a ranged weapon?
+answerer: No.
+questioner: Is the target used for close combat?
+answerer: No.
+questioner: Is the target an explosive device?
+answerer: Yes! That's correct.
+====================
+target = rhubarb
+candidates = ['orange', 'shield', 'crossbow', 'lime', 'crowbar', 'missile', 'rhubarb', 'banana']
+questioner: Got it! Is the target a living thing?
+answerer: YES
+questioner: Is the target an animal?
+answerer: NO
+questioner: Is the target a type of fruit?
+answerer: NO
+questioner: Is the target a plant?
+answerer: YES
+questioner: Is the plant commonly used in cooking or as food?
+answerer: YES
+questioner: Is the plant a fruit typically eaten raw?
+answerer: NO
+questioner: Is the plant typically cooked or used as a vegetable?
+answerer: YES
+questioner: Is the plant the rhubarb?
+answerer: Yes! That's correct.
+====================
+target = rhubarb
+candidates = ['rhubarb', 'peach', 'apple', 'plum', 'crowbar', 'pistol', 'rifle', 'whip']
+questioner: Is the target item a fruit?
+answerer: NO
+questioner: Is the target item a tool or weapon?
+answerer: NO
+questioner: Is the target item an animal?
+answerer: NO
+questioner: Is the target item an object generally used for hitting or striking?
+answerer: NO
+questioner: Is the target item a type of plant or part of a plant?
+answerer: YES
+questioner: Is the target item a type of rhubarb?
+answerer: Yes! That's correct.
+====================
+target = tomato
+candidates = ['knife', 'honeydew', 'tomato', 'grape', 'sword', 'whip', 'rhubarb', 'stick']
+questioner: Is the target something that is a fruit?
+answerer: YES
+questioner: Is the target a single fruit, rather than a group or cluster of fruits?
+answerer: YES
+questioner: Is the target a type of melon?
+answerer: NO
+questioner: Is the target a commonly red fruit?
+answerer: YES
+questioner: Is the target a tomato?
+answerer: Yes! That's correct.
+====================
+target = missile
+candidates = ['onions', 'pickle', 'beans', 'olive', 'catapult', 'bazooka', 'missile', 'slingshot']
+questioner: Is the target something edible?
+answerer: NO
+questioner: Is the target a weapon or used for launching projectiles?
+answerer: YES
+questioner: Is the target a modern weapon?
+answerer: YES
+questioner: Is the target a missile?
+answerer: Yes! That's correct.
+====================
+target = rocket
+candidates = ['rocket', 'pickle', 'cannon', 'crowbar', 'avocado', 'grenade', 'radish', 'mushroom']
+questioner: Is the target a living thing?
+answerer: NO
+questioner: Is the target typically used as a tool or weapon?
+answerer: YES
+questioner: Is the target an explosive device?
+answerer: NO
+questioner: Is the target primarily made of metal?
+answerer: YES
+questioner: Is the target used to pry or lever objects?
+answerer: NO
+questioner: Is the target a device that launches or propels objects?
+answerer: YES
+questioner: Is the target a rocket?
+answerer: Yes! That's correct.
+====================
+target = axe
+candidates = ['catapult', 'cannon', 'corn', 'pickle', 'bazooka', 'cucumber', 'potato', 'axe']
+questioner: Is the target an object typically used as a weapon?
+answerer: YES
+questioner: Is the target a modern weapon?
+answerer: NO
+questioner: Is the target a handheld weapon?
+answerer: YES
+questioner: Is the target a melee weapon (used in close combat)?
+answerer: YES
+questioner: Is the target an axe?
+answerer: Yes! That's correct.
+====================
+target = potato
+candidates = ['turnip', 'stone', 'potato', 'harpoon', 'grenade', 'mushroom', 'radish', 'rifle']
+questioner: Is the target an object that is typically used as a weapon?
+answerer: NO
+questioner: Is the target something that is edible?
+answerer: YES
+questioner: Is the target a type of vegetable?
+answerer: YES
+questioner: Is the target a root vegetable (grows underground)?
+answerer: YES
+questioner: Is the target commonly used in cooking as a starchy ingredient?
+answerer: YES
+questioner: Is the target a potato?
+answerer: Yes! That's correct.
+====================
+target = peas
+candidates = ['bomb', 'cabbage', 'stone', 'peas', 'beans', 'rock', 'rifle', 'cauliflower']
+questioner: Is the target a living thing?
+answerer: NO
+questioner: Is the target a natural object?
+answerer: YES
+questioner: Is the target a type of plant or derived from a plant?
+answerer: YES
+questioner: Is the target an edible plant?
+answerer: YES
+questioner: Is the target a vegetable commonly consumed as food?
+answerer: YES
+questioner: Is the target a leafy vegetable?
+answerer: NO
+questioner: Is the target a type of legume (such as peas or beans)?
+answerer: YES
+questioner: Is the target peas?
+answerer: Yes! That's correct.
+====================
+target = mushroom
+candidates = ['tomahawk', 'mushroom', 'axe', 'stick', 'onions', 'whip', 'broccoli', 'carrot']
+questioner: Is the target an object primarily used as a tool or weapon?
+answerer: NO
+questioner: Is the target something that is commonly eaten as food?
+answerer: YES
+questioner: Is the target a type of vegetable?
+answerer: NO
+questioner: Is the target a type of fungus?
+answerer: YES
+questioner: Is the target a mushroom?
+answerer: Yes! That's correct.
+====================
+target = lime
+candidates = ['celery', 'mushroom', 'prune', 'grapefruit', 'banana', 'lime', 'zucchini', 'beans']
+questioner: Is the target item a fruit?
+answerer: YES
+questioner: Is the target item citrus fruit?
+answerer: YES
+questioner: Is the target item grapefruit?
+answerer: NO
+questioner: Is the target item lime?
+answerer: Yes! That's correct.
+====================
+target = banana
+candidates = ['banana', 'beans', 'tangerine', 'beets', 'pickle', 'mushroom', 'cranberry', 'peach']
+questioner: Great! I will start guessing.
+
+Is the target a fruit?
+answerer: Yes.
+questioner: Is the target typically sweet?
+answerer: Yes.
+questioner: Is the target commonly eaten fresh (rather than cooked or processed)?
+answerer: Yes.
+questioner: Is the target orange in color?
+answerer: No.
+questioner: Is the target yellow in color?
+answerer: Yes.
+questioner: Is the target a banana?
+answerer: Yes! That's correct.
+====================
+target = coconut
+candidates = ['lemon', 'beets', 'orange', 'beans', 'mushroom', 'coconut', 'raspberry', 'radish']
+questioner: Is the target a fruit?
+answerer: YES
+questioner: Is the target typically citrus?
+answerer: NO
+questioner: Is the target a berry?
+answerer: YES
+questioner: Is the target raspberry?
+answerer: NO
+questioner: Is the target coconut?
+answerer: Yes! That's correct.
+====================
+target = carrot
+candidates = ['zucchini', 'plum', 'orange', 'beans', 'pineapple', 'lettuce', 'carrot', 'lemon']
+questioner: Is the target something that is typically eaten raw?
+answerer: Yes.
+questioner: Is the target a type of fruit?
+answerer: No.
+questioner: Is the target a type of leafy vegetable?
+answerer: No.
+questioner: Is the target a root vegetable?
+answerer: Yes.
+questioner: Is the target orange in color?
+answerer: Yes.
+questioner: Is the target a carrot?
+answerer: Yes! That's correct.
+====================
+target = pickle
+candidates = ['radish', 'beans', 'zucchini', 'honeydew', 'pickle', 'pineapple', 'peach', 'strawberry']
+questioner: Is the target a fruit?
+answerer: NO
+questioner: Is the target a vegetable?
+answerer: YES
+questioner: Is the target commonly eaten cooked rather than raw?
+answerer: NO
+questioner: Is the target typically eaten fresh and raw in salads?
+answerer: NO
+questioner: Is the target usually eaten pickled?
+answerer: YES! That's correct.
+====================
+target = onions
+candidates = ['beans', 'onions', 'strawberry', 'beets', 'pineapple', 'pickle', 'raspberry', 'peach']
+questioner: Is the item you are thinking of a fruit?
+answerer: NO
+questioner: Is the item you are thinking of a vegetable?
+answerer: YES
+questioner: Is the item you are thinking of typically eaten raw?
+answerer: YES
+questioner: Is the item you are thinking of typically used in salads?
+answerer: YES
+questioner: Is the item you are thinking of onions?
+answerer: Yes! That's correct.
