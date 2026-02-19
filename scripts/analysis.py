@@ -11,7 +11,7 @@ from scipy.stats import entropy
 
 
 def preprocess_dialogues(dialogues_raw):
-    dialogues_raw = dialogues_raw.split("\n******************\n")
+    dialogues_raw = dialogues_raw.split("\n====================\n")
     dialogues = []
     for dialogue_raw in dialogues_raw:
         dialogue_raw = [interaction for interaction in dialogue_raw.split("\n") if interaction != ""]
@@ -80,7 +80,7 @@ def preprocess_for_eig(annotations_raw):
     return eig_dict, result_dict
 
 def stepwise_guesser_annotations(dialogues):
-    dialogues = [dial.strip("\n") for dial in dialogues.split("******************")]
+    dialogues = [dial.strip("\n") for dial in dialogues.split("====================")]
     dialogues = [[interaction for interaction in dial.split("\n") if interaction != ""] for dial in dialogues]
     dialogues = dialogues[1:]
 
@@ -143,7 +143,7 @@ class Analysis():
         self.annotations = annotations
         self.game_set = game_set
 
-        self.num_dialogs = len(dialogues.split("\n******************\n"))
+        self.num_dialogs = len(dialogues.split("\n====================\n"))
         self.num_candidates = len(annotations[1]['candidates'])
 
         self.hs_questions_pos = []
@@ -155,7 +155,7 @@ class Analysis():
 
     def ans_error_rate(self, save=False):
         correct = 0
-        dialogues = [dial for dial in self.dialogues.split("******************\n") if dial != ""]
+        dialogues = [dial for dial in self.dialogues.split("====================\n") if dial != ""]
         for i, dialogue in enumerate(dialogues):
             full_dial = dialogue.strip('\n')
             dialogue = dialogue.strip('\n').split("\n")
@@ -179,7 +179,7 @@ class Analysis():
         unnecessary_qs = []
         num_dial_unnecessary_qs = 0
         n_questions = 0
-        dialogues = [dial for dial in self.dialogues.split("******************\n") if dial != ""]
+        dialogues = [dial for dial in self.dialogues.split("====================\n") if dial != ""]
 
         for i, dialogue in enumerate(preprocess_annotations(self.annotations)):
             _, q, reference_set = dialogue[0]
@@ -229,7 +229,7 @@ class Analysis():
         return unnecessary_qs, (num_dial_unnecessary_qs/len(dialogues))*100, (np.sum(unnecessary_qs)/n_questions)*100
     
     def oracle_spoilers(self, save=False):
-        dialogues_raw = [dial for dial in self.dialogues.split("******************\n") if dial != '']
+        dialogues_raw = [dial for dial in self.dialogues.split("====================\n") if dial != '']
         dialogues = []
         for dial in dialogues_raw:
             dial = [interaction for interaction in dial.split("\n") if interaction != '']
@@ -543,10 +543,10 @@ if __name__ == "__main__":
     parser.add_argument('--log_errors', action=argparse.BooleanOptionalAction)
     args = parser.parse_args()
 
-    with open(f"../data/generation/{args.game_set}/dialogues.txt") as f:
+    with open(f"../data/generation/gemini/{args.game_set}/dialogues.txt") as f:
         dialogues = f.read()
     
-    with open(f"../data/generation/{args.game_set}/oracle_annotations.json") as f:
+    with open(f"../data/generation/gemini/{args.game_set}/oracle_annotations.json") as f:
         annotations = json.load(f)
 
     if args.log_errors:

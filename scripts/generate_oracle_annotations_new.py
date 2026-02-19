@@ -62,7 +62,7 @@ def read_dialogues(path):
 
     with open(path) as f:
 
-        dialogues = f.read().split("******************")
+        dialogues = f.read().split("====================")
 
     dialogues = [
 

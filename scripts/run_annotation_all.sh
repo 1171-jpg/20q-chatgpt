@@ -4,7 +4,7 @@
 # Run annotation for multiple backends and game sets
 # ==========================================
 
-BACKENDS=("gemini" "openai","llama","qwen")
+BACKENDS=("openai" "llama" "qwen")
 # GAME_SETS=("8_mcrae" "16_mcrae" "8_wordnet" "8_gpt" "8_mcrae_stepwise")
 GAME_SETS=("8_mcrae")
 echo "========================================="
